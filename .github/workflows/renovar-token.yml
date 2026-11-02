@@ -18,6 +18,8 @@ jobs:
           TOKEN_ACTUAL: ${{ secrets.THREADS_ACCESS_TOKEN }}
           GH_TOKEN: ${{ secrets.GH_PAT }}
         run: |
+          # Meta solo deja renovar tokens con más de 24 horas de antigüedad
+          TOKEN_ACTUAL=$(printf %s "$TOKEN_ACTUAL" | tr -d '[:space:]')
           RESPUESTA=$(curl -sf "https://graph.threads.net/refresh_access_token?grant_type=th_refresh_token&access_token=${TOKEN_ACTUAL}")
           NUEVO=$(echo "$RESPUESTA" | jq -r '.access_token')
           if [ -z "$NUEVO" ] || [ "$NUEVO" = "null" ]; then
