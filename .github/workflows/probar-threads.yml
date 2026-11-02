@@ -1,0 +1,29 @@
+name: Probar conexión con Threads
+
+# Solo lee: no publica nada. Sirve para revisar que el token y los permisos andan.
+on:
+  workflow_dispatch:
+
+jobs:
+  probar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: Leer la cuenta
+        env:
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+        working-directory: bot
+        run: |
+          python - <<'PY'
+          from threads import Threads
+          t = Threads()
+          print("Cuenta:", "@" + t.usuario["username"])
+          limite = t._get("me/threads_publishing_limit", fields="quota_usage,config")
+          print("Permiso para publicar: OK", limite["data"][0])
+          posts = t._get("me/threads", fields="id", limit=1)
+          print("Lectura de posts: OK")
+          PY

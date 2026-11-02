@@ -9,7 +9,7 @@ API = "https://graph.threads.net/v1.0"
 
 class Threads:
     def __init__(self, token=None):
-        self.token = token or os.environ["THREADS_ACCESS_TOKEN"]
+        self.token = "".join((token or os.environ["THREADS_ACCESS_TOKEN"]).split())
         self._usuario = None
 
     def _get(self, ruta, **params):
