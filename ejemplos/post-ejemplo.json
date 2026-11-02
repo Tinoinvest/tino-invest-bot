@@ -1,0 +1,15 @@
+{
+  "fecha": "ejemplo",
+  "pilar": "Hagamos la cuenta",
+  "tema": "Monoambiente para alquilar en Asunción",
+  "texto": "¿Comprar un depto en Asunción para alquilar conviene?\n\nHagamos la cuenta simple 👇\n\nUn monoambiente cuesta ~USD 75.000 y se alquila a ~USD 550/mes.\nEso es ~USD 6.600 al año → 8,8% bruto.\n\nRestale expensas, impuestos y algún mes vacío y te queda ~6,5% neto.\n\nNo es magia, pero en dólares y con un activo real, está muy bien.\n\n¿Querés ver cómo da la cuenta en tu caso? Comentá INFO y te escribo.",
+  "fuente": "Cifras ilustrativas",
+  "slides": [
+    {"tipo": "portada", "kicker": "Asunción · Monoambiente", "titulo": "¿Comprar para alquilar conviene?", "texto": "Hagamos la cuenta simple.", "prefijo": "", "valor": "", "unidad": "", "etiqueta": "", "operacion": "", "resultado": "", "items": [], "barras": []},
+    {"tipo": "numero", "kicker": "Paso 1 · Lo que cuesta", "prefijo": "USD", "valor": "75.000", "unidad": "", "texto": "Precio promedio de un **monoambiente** en una zona buscada de Asunción.", "titulo": "", "etiqueta": "", "operacion": "", "resultado": "", "items": [], "barras": []},
+    {"tipo": "cuenta", "kicker": "Paso 2 · Lo que te paga", "valor": "550", "etiqueta": "USD por mes de alquiler", "operacion": "× 12 meses", "resultado": "6.600", "texto": "USD por año, **cobrados en dólares**.", "titulo": "", "prefijo": "", "unidad": "", "items": [], "barras": []},
+    {"tipo": "destacado", "kicker": "Paso 3 · Rentabilidad bruta", "valor": "8,8", "unidad": "%", "texto": "6.600 ÷ 75.000 = 0,088\nEs lo que rinde **antes** de gastos.", "titulo": "", "prefijo": "", "etiqueta": "", "operacion": "", "resultado": "", "items": [], "barras": []},
+    {"tipo": "lista", "kicker": "Paso 4 · Restale los gastos", "items": [{"etiqueta": "Expensas", "valor": "− 0,9%"}, {"etiqueta": "Impuestos y mantenimiento", "valor": "− 0,7%"}, {"etiqueta": "Un mes sin inquilino", "valor": "− 0,7%"}], "etiqueta": "Te queda neto", "resultado": "~6,5%", "titulo": "", "texto": "", "prefijo": "", "valor": "", "unidad": "", "operacion": "", "barras": []},
+    {"tipo": "cierre", "kicker": "¿Contra qué lo comparo?", "barras": [{"etiqueta": "Plazo fijo en USD", "valor_texto": "~4%", "valor_num": 4}, {"etiqueta": "Monoambiente en Asunción (neto)", "valor_texto": "~6,5%", "valor_num": 6.5}], "titulo": "No es magia. Pero es un activo real.", "texto": "", "prefijo": "", "valor": "", "unidad": "", "etiqueta": "", "operacion": "", "resultado": "", "items": []}
+  ]
+}

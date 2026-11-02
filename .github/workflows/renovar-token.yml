@@ -1,0 +1,28 @@
+name: Renovar token de Threads
+
+# El token de Threads vence a los 60 días; lo renovamos cada semana y lo guardamos de nuevo como secreto.
+on:
+  schedule:
+    - cron: "0 12 * * 1" # lunes 09:00 en Paraguay
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  renovar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pedir token nuevo y guardarlo
+        env:
+          TOKEN_ACTUAL: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          RESPUESTA=$(curl -sf "https://graph.threads.net/refresh_access_token?grant_type=th_refresh_token&access_token=${TOKEN_ACTUAL}")
+          NUEVO=$(echo "$RESPUESTA" | jq -r '.access_token')
+          if [ -z "$NUEVO" ] || [ "$NUEVO" = "null" ]; then
+            echo "No se pudo renovar el token" && exit 1
+          fi
+          echo "::add-mask::$NUEVO"
+          gh secret set THREADS_ACCESS_TOKEN --body "$NUEVO" --repo "${{ github.repository }}"
+          echo "Token renovado. Vence en $(( $(echo "$RESPUESTA" | jq -r '.expires_in') / 86400 )) días."

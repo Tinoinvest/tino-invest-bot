@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Carrusel tino.invest</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #EFE8D8;
+    --ink: #1E3A2B;
+    --muted: #5C7A68;
+    --gold: #F7C33A;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #cfc7b5; font-family: "Inter Tight", sans-serif; color: var(--ink); }
+  body.single { background: var(--paper); }
+  .deck { display: flex; flex-direction: column; gap: 40px; padding: 40px; align-items: center; }
+  body.single .deck { padding: 0; gap: 0; }
+
+  .slide {
+    position: relative; width: 1080px; height: 1350px; overflow: hidden;
+    background: var(--paper);
+  }
+  .slide.dark { background: var(--ink); color: var(--paper); }
+
+  /* paper grain */
+  .slide::before {
+    content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .35;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' seed='7'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .25 0 0 0 .5 0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  .slide.dark::before { opacity: .18; }
+
+  /* Swiss grid: margins 60, 4 cols of 217.5, gutter 30, rows every 150 */
+  .grid { position: absolute; inset: 0; pointer-events: none; }
+  .grid line { stroke: var(--ink); stroke-width: 1; opacity: .16; }
+  .dark .grid line { stroke: var(--paper); opacity: .12; }
+
+  .content { position: absolute; inset: 0; padding: 60px; }
+
+  /* header / footer rails */
+  .rail {
+    position: absolute; left: 60px; right: 60px; display: flex; justify-content: space-between;
+    font-weight: 700; font-size: 26px; letter-spacing: .08em; text-transform: uppercase;
+  }
+  .rail.top { top: 60px; }
+  .rail.bottom { bottom: 56px; font-weight: 600; font-size: 22px; letter-spacing: .06em; }
+  .rail .muted { color: var(--muted); }
+  .dark .rail .muted { color: #9DB3A5; }
+  .brand { display: flex; align-items: center; gap: 14px; text-transform: none; letter-spacing: .01em; font-weight: 800; }
+  .dot { width: 22px; height: 22px; border-radius: 50%; background: var(--gold); display: inline-block; }
+
+  .kicker { font-weight: 700; font-size: 30px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+  .dark .kicker { color: #9DB3A5; }
+  .huge { font-weight: 800; letter-spacing: -.045em; line-height: .86; }
+  .body { font-weight: 500; font-size: 44px; line-height: 1.22; letter-spacing: -.01em; }
+  .body b { font-weight: 800; }
+
+  .tile { display: inline-block; background: var(--ink); color: var(--paper); padding: 14px 24px 16px; font-weight: 800; }
+  .tile.gold { background: var(--gold); color: var(--ink); }
+  .rule { height: 14px; background: var(--gold); }
+
+  .abs { position: absolute; }
+</style>
+</head>
+<body>
+<div class="deck">
+
+  <!-- 1. Portada -->
+  <section class="slide">
+    <div class="content">
+      <div class="rail top"><span class="brand"><span class="dot"></span>@tino.invest</span><span class="muted">01 / 06</span></div>
+      <div class="abs kicker" style="left:60px; top:300px;">Asunción · Monoambiente</div>
+      <div class="abs huge" style="left:54px; top:360px; font-size:170px;">¿Comprar<br>para<br>alquilar<br>conviene?</div>
+      <div class="abs rule" style="left:60px; top:1050px; width:435px;"></div>
+      <div class="abs body" style="left:60px; top:1095px; font-size:48px;">Hagamos la cuenta simple.</div>
+      <div class="rail bottom"><span class="muted">Deslizá →</span><span class="muted">Real estate · Paraguay</span></div>
+    </div>
+  </section>
+
+  <!-- 2. Precio -->
+  <section class="slide">
+    <div class="content">
+      <div class="rail top"><span class="brand"><span class="dot"></span>@tino.invest</span><span class="muted">02 / 06</span></div>
+      <div class="abs kicker" style="left:60px; top:300px;">Paso 1 · Lo que cuesta</div>
+      <div class="abs huge" style="left:50px; top:390px; font-size:120px;">USD</div>
+      <div class="abs huge" style="left:46px; top:500px; font-size:300px;">75.000</div>
+      <div class="abs body" style="left:60px; top:900px; width:700px;">Precio promedio de un <b>monoambiente</b> en una zona buscada de Asunción.</div>
+      <div class="rail bottom"><span class="muted">Cifras ilustrativas</span><span class="muted">Deslizá →</span></div>
+    </div>
+  </section>
+
+  <!-- 3. Alquiler -->
+  <section class="slide">
+    <div class="content">
+      <div class="rail top"><span class="brand"><span class="dot"></span>@tino.invest</span><span class="muted">03 / 06</span></div>
+      <div class="abs kicker" style="left:60px; top:300px;">Paso 2 · Lo que te paga</div>
+      <div class="abs huge" style="left:50px; top:380px; font-size:220px;">550</div>
+      <div class="abs body" style="left:60px; top:590px;">USD por mes de alquiler</div>
+      <div class="abs" style="left:60px; top:720px; width:960px; height:2px; background:var(--ink); opacity:.5;"></div>
+      <div class="abs body" style="left:60px; top:770px; color:var(--muted);">× 12 meses</div>
+      <div class="abs tile" style="left:60px; top:860px; font-size:150px; letter-spacing:-.04em; line-height:1;">6.600</div>
+      <div class="abs body" style="left:60px; top:1060px;">USD por año, <b>cobrados en dólares</b>.</div>
+      <div class="rail bottom"><span class="muted">Cifras ilustrativas</span><span class="muted">Deslizá →</span></div>
+    </div>
+  </section>
+
+  <!-- 4. Bruto -->
+  <section class="slide dark">
+    <div class="content">
+      <div class="rail top"><span class="brand"><span class="dot"></span>@tino.invest</span><span class="muted">04 / 06</span></div>
+      <div class="abs kicker" style="left:60px; top:300px;">Paso 3 · Rentabilidad bruta</div>
+      <div class="abs huge" style="left:40px; top:400px; font-size:400px;">8,8<span style="font-size:200px;">%</span></div>
+      <div class="abs rule" style="left:60px; top:820px; width:960px;"></div>
+      <div class="abs body" style="left:60px; top:880px; width:900px;">6.600 ÷ 75.000 = 0,088<br>Es lo que rinde <b>antes</b> de gastos.</div>
+      <div class="rail bottom"><span class="muted">Cifras ilustrativas</span><span class="muted">Deslizá →</span></div>
+    </div>
+  </section>
+
+  <!-- 5. Neto -->
+  <section class="slide">
+    <div class="content">
+      <div class="rail top"><span class="brand"><span class="dot"></span>@tino.invest</span><span class="muted">05 / 06</span></div>
+      <div class="abs kicker" style="left:60px; top:300px;">Paso 4 · Restale los gastos</div>
+      <div class="abs" style="left:60px; top:370px; width:960px;">
+        <div class="body" style="display:flex; justify-content:space-between; padding:26px 0; border-bottom:2px solid rgba(30,58,43,.25);"><span>Expensas</span><b>− 0,9%</b></div>
+        <div class="body" style="display:flex; justify-content:space-between; padding:26px 0; border-bottom:2px solid rgba(30,58,43,.25);"><span>Impuestos y mantenimiento</span><b>− 0,7%</b></div>
+        <div class="body" style="display:flex; justify-content:space-between; padding:26px 0; border-bottom:2px solid rgba(30,58,43,.25);"><span>Un mes sin inquilino</span><b>− 0,7%</b></div>
+      </div>
+      <div class="abs kicker" style="left:60px; top:800px;">Te queda neto</div>
+      <div class="abs tile gold" style="left:60px; top:860px; font-size:260px; letter-spacing:-.045em; line-height:.9; padding:20px 34px 64px;">~6,5%</div>
+      <div class="rail bottom"><span class="muted">Cifras ilustrativas</span><span class="muted">Deslizá →</span></div>
+    </div>
+  </section>
+
+  <!-- 6. Cierre -->
+  <section class="slide">
+    <div class="content">
+      <div class="rail top"><span class="brand"><span class="dot"></span>@tino.invest</span><span class="muted">06 / 06</span></div>
+      <div class="abs kicker" style="left:60px; top:300px;">¿Contra qué lo comparo?</div>
+      <div class="abs" style="left:60px; top:380px; width:960px;">
+        <div class="body" style="font-size:36px; margin-bottom:14px;">Plazo fijo en USD</div>
+        <div style="display:flex; align-items:center; gap:24px; margin-bottom:50px;">
+          <div style="height:90px; width:370px; background:var(--ink); opacity:.35;"></div>
+          <span class="huge" style="font-size:90px;">~4%</span>
+        </div>
+        <div class="body" style="font-size:36px; margin-bottom:14px;">Monoambiente en Asunción (neto)</div>
+        <div style="display:flex; align-items:center; gap:24px;">
+          <div style="height:90px; width:600px; background:var(--gold);"></div>
+          <span class="huge" style="font-size:90px;">~6,5%</span>
+        </div>
+      </div>
+      <div class="abs huge" style="left:56px; top:800px; font-size:100px; line-height:.95; letter-spacing:-.025em;">No es magia.<br>Pero es un<br>activo real.</div>
+      <div class="abs tile" style="left:60px; top:1145px; font-size:40px; letter-spacing:-.01em; padding:16px 26px 18px;">Comentá <span style="color:var(--gold);">INFO</span> y te escribo</div>
+      <div class="rail bottom"><span class="muted">Cifras ilustrativas</span><span class="muted">Real estate · Paraguay</span></div>
+    </div>
+  </section>
+
+</div>
+<script>
+  // Swiss grid on every slide
+  const W = 1080, H = 1350, M = 60, COL = 217.5, GUT = 30;
+  const xs = [M];
+  for (let i = 0; i < 4; i++) { const x0 = M + i * (COL + GUT); xs.push(x0, x0 + COL); }
+  const xsU = [...new Set(xs)];
+  const ys = []; for (let y = 150; y < H; y += 150) ys.push(y);
+  document.querySelectorAll('.slide').forEach(s => {
+    const lines = xsU.map(x => `<line x1="${x}" y1="0" x2="${x}" y2="${H}"/>`).join('') +
+                  ys.map(y => `<line x1="0" y1="${y}" x2="${W}" y2="${y}"/>`).join('');
+    s.insertAdjacentHTML('afterbegin', `<svg class="grid" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}">${lines}</svg>`);
+  });
+  // ?s=N shows a single slide (used to export PNGs)
+  const n = new URLSearchParams(location.search).get('s');
+  if (n) {
+    document.body.classList.add('single');
+    document.querySelectorAll('.slide').forEach((s, i) => { if (i + 1 !== +n) s.remove(); });
+  }
+</script>
+</body>
+</html>

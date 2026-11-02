@@ -1,0 +1,79 @@
+name: Generar post del día
+
+on:
+  schedule:
+    - cron: "0 10 * * *" # 07:00 en Paraguay (UTC-3)
+  workflow_dispatch:
+    inputs:
+      fecha:
+        description: "Fecha AAAA-MM-DD (vacío = hoy)"
+        required: false
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: posts
+  cancel-in-progress: false
+
+jobs:
+  generar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependencias
+        run: |
+          pip install -r requirements.txt
+          python -m playwright install --with-deps chromium
+
+      - name: Generar texto y slides
+        id: gen
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FECHA: ${{ inputs.fecha }}
+        run: python bot/generar.py $FECHA
+
+      - name: Sumar quién comentó INFO
+        env:
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+        run: python bot/informe_info.py >> "posts/${{ steps.gen.outputs.fecha }}/issue.md" || echo "No se pudo leer Threads"
+
+      - name: Guardar en el repo
+        run: |
+          git config user.name "tino-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add posts
+          git commit -m "Borrador ${{ steps.gen.outputs.fecha }}"
+          git pull --rebase
+          git push
+
+      - name: Publicar directo (modo automático)
+        if: vars.PUBLICAR_AUTOMATICO == 'true'
+        env:
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+        run: |
+          python bot/publicar.py "${{ steps.gen.outputs.fecha }}"
+          git add posts
+          git commit -m "Publicado ${{ steps.gen.outputs.fecha }}"
+          git pull --rebase
+          git push
+
+      - name: Abrir borrador para aprobar
+        if: vars.PUBLICAR_AUTOMATICO != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create borrador --color F7C33A --description "Post esperando aprobación" --force
+          gh issue create \
+            --title "Borrador ${{ steps.gen.outputs.fecha }}" \
+            --body-file "posts/${{ steps.gen.outputs.fecha }}/issue.md" \
+            --label borrador \
+            --assignee "${{ github.repository_owner }}"

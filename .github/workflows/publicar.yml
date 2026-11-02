@@ -1,0 +1,83 @@
+name: Publicar borrador aprobado
+
+# Se dispara cuando el dueño del repo comenta /publicar en un issue "Borrador AAAA-MM-DD".
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: posts
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    if: >-
+      github.event.issue.pull_request == null &&
+      startsWith(github.event.comment.body, '/publicar') &&
+      github.event.comment.user.login == github.repository_owner &&
+      contains(github.event.issue.labels.*.name, 'borrador')
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Leer la fecha del título
+        id: fecha
+        env:
+          TITULO: ${{ github.event.issue.title }}
+        run: |
+          FECHA="${TITULO##* }"
+          if [[ ! "$FECHA" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
+            echo "El título tiene que terminar en una fecha AAAA-MM-DD" && exit 1
+          fi
+          echo "fecha=$FECHA" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependencias
+        run: |
+          pip install -r requirements.txt
+          python -m playwright install --with-deps chromium
+
+      - name: Rearmar slides desde post.json (por si lo editaste)
+        run: python bot/render.py "posts/${{ steps.fecha.outputs.fecha }}/post.json"
+
+      - name: Subir slides
+        run: |
+          git config user.name "tino-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add posts
+          git diff --cached --quiet || git commit -m "Slides finales ${{ steps.fecha.outputs.fecha }}"
+          git pull --rebase
+          git push
+
+      - name: Publicar en Threads
+        id: pub
+        env:
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+        run: python bot/publicar.py "${{ steps.fecha.outputs.fecha }}"
+
+      - name: Guardar y cerrar el borrador
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git add posts
+          git commit -m "Publicado ${{ steps.fecha.outputs.fecha }}"
+          git pull --rebase
+          git push
+          gh issue comment ${{ github.event.issue.number }} --body "Publicado ✅ ${{ steps.pub.outputs.permalink }}"
+          gh issue edit ${{ github.event.issue.number }} --remove-label borrador --add-label publicado || true
+          gh issue close ${{ github.event.issue.number }}
+
+      - name: Avisar si falló
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh issue comment ${{ github.event.issue.number }} --body "No se pudo publicar ❌ Mirá el detalle en ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
