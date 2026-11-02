@@ -43,6 +43,8 @@ jobs:
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           FECHA: ${{ inputs.fecha }}
         run: |
+          # Al copiar el token de la terminal a veces se cuela un salto de línea
+          export CLAUDE_CODE_OAUTH_TOKEN=$(printf %s "$CLAUDE_CODE_OAUTH_TOKEN" | tr -d '[:space:]')
           if [ -n "$CLAUDE_CODE_OAUTH_TOKEN" ]; then
             npm install -g @anthropic-ai/claude-code
             PEDIDO=$(python bot/generar.py --preparar $FECHA)
