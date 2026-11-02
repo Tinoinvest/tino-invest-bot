@@ -1,6 +1,11 @@
 """Genera el post del día: elige el tema, investiga con búsqueda web, escribe el texto y arma los slides.
 
-Uso: python bot/generar.py [AAAA-MM-DD]
+Dos formas de usarlo:
+- Con la API (pago por uso):   python bot/generar.py [AAAA-MM-DD]
+- Con la suscripción de Claude (Claude Code hace la investigación y escribe post.json):
+    python bot/generar.py --preparar [AAAA-MM-DD]   -> instrucciones para Claude Code
+    python bot/generar.py --validar AAAA-MM-DD      -> revisa post.json
+    python bot/generar.py --terminar [AAAA-MM-DD]   -> slides, historial e issue
 Deja todo en posts/<fecha>/ (post.json, slides PNG, issue.md) y actualiza posts/historial.json.
 """
 import datetime as dt
@@ -248,18 +253,66 @@ def escribir_issue(carpeta, fecha, post, investigacion, repo):
     (carpeta / "issue.md").write_text(cuerpo, encoding="utf-8")
 
 
-def main():
-    hoy_py = dt.datetime.now(ZoneInfo("America/Asuncion")).date()
-    fecha = dt.date.fromisoformat(sys.argv[1]) if len(sys.argv) > 1 else hoy_py
-    pilar = pilar_del_dia(fecha)
+def pedido_claude_code(fecha, pilar, recientes):
+    """Instrucciones para Claude Code (modo suscripción): investiga, escribe post.json y lo valida."""
+    carpeta = f"posts/{fecha.isoformat()}"
+    lista_recientes = "\n".join(f"- {h['fecha']}: {h['tema']}" for h in recientes) or "- (ninguno todavía)"
+    return f"""Sos el investigador y redactor de @tino.invest, una cuenta educativa de inversión inmobiliaria en Paraguay.
+Hoy es {fecha.isoformat()} ({DIAS[fecha.weekday()]}). Pilar del día: **{pilar}**.
+
+Antes de empezar, leé GUIA-DE-ESTILO.md y TEMAS.md (en la raíz del repo) y seguilos al pie de la letra.
+
+Temas ya publicados en las últimas 6 semanas (no los repitas):
+{lista_recientes}
+
+## 1. Investigación
+Elegí un tema del banco para este pilar (o uno nuevo que encaje, si es más oportuno por una noticia) y buscá en la web
+los datos que hacen falta para explicarlo con números simples. Nunca inventes cifras: si no encontrás un dato confiable,
+usá un rango razonable marcado como estimación, o un enfoque conceptual que no dependa de ese número.
+Preferí fuentes paraguayas serias: BCP, INE, DNIT, MUVH, diarios (ABC, La Nación, Última Hora, 5días),
+portales inmobiliarios e informes de cámaras del sector.
+Guardá el resumen en `{carpeta}/investigacion.md`: tema elegido, datos clave con fuente y fecha, y qué cifras son estimaciones.
+
+## 2. Post
+Escribí `{carpeta}/post.json` con este esquema JSON exacto (mirá `ejemplos/post-ejemplo.json` como referencia de formato):
+
+```json
+{json.dumps(ESQUEMA_POST, ensure_ascii=False)}
+```
+
+{GUIA_SLIDES}
+
+- "texto": el post para Threads, máximo estricto de {LIMITE_THREADS} caracteres con el CTA "Comentá INFO" incluido.
+- "fuente": fuentes cortas para el pie del slide (ej. "Fuente: BCP, INE"); si alguna cifra es estimada, agregá "· Estimaciones propias".
+- Usá solo datos de tu investigación.
+
+## 3. Validación
+Corré `python bot/generar.py --validar {fecha.isoformat()}` y corregí `post.json` hasta que diga OK.
+No toques ningún otro archivo del repo.
+"""
+
+
+def validar(post):
+    """Revisa que post.json respete el esquema y las reglas. Devuelve la lista de problemas."""
+    faltan = [c for c in ESQUEMA_POST["required"] if c not in post]
+    if faltan:
+        return [f"Faltan campos: {faltan}"]
+    campos = ESQUEMA_POST["properties"]["slides"]["items"]["required"]
+    problemas = []
+    for i, s in enumerate(post["slides"], start=1):
+        faltan = [c for c in campos if c not in s]
+        if faltan:
+            problemas.append(f"Al slide {i} le faltan campos: {faltan}")
+        if s.get("tipo") not in TIPOS_SLIDE:
+            problemas.append(f"El slide {i} tiene un tipo inválido: {s.get('tipo')}")
+    return problemas or problemas_del_post(post)
+
+
+def terminar(fecha, pilar, post, investigacion):
+    """Guarda el post, arma los slides, actualiza el historial y deja listo el issue."""
     carpeta = POSTS / fecha.isoformat()
-    print(f"Post del {fecha} · pilar: {pilar}")
-
-    cliente = anthropic.Anthropic()
-    investigacion = investigar(cliente, fecha, pilar, temas_recientes(fecha))
-    post = escribir(cliente, fecha, pilar, investigacion)
-    post = {"fecha": fecha.isoformat(), "pilar": pilar, **post}
-
+    post = {"fecha": fecha.isoformat(), "pilar": pilar,
+            **{k: v for k, v in post.items() if k not in ("fecha", "pilar")}}
     carpeta.mkdir(parents=True, exist_ok=True)
     (carpeta / "post.json").write_text(json.dumps(post, ensure_ascii=False, indent=2), encoding="utf-8")
     (carpeta / "investigacion.md").write_text(investigacion, encoding="utf-8")
@@ -280,6 +333,49 @@ def main():
         with open(salida, "a", encoding="utf-8") as f:
             f.write(f"fecha={fecha.isoformat()}\n")
     print(f"Listo: {len(rutas)} slides en {carpeta}")
+
+
+def main():
+    args = sys.argv[1:]
+    modo = args.pop(0) if args and args[0].startswith("--") else "--api"
+    hoy_py = dt.datetime.now(ZoneInfo("America/Asuncion")).date()
+    fecha = dt.date.fromisoformat(args[0]) if args else hoy_py
+    pilar = pilar_del_dia(fecha)
+    carpeta = POSTS / fecha.isoformat()
+
+    if modo == "--api":
+        # Modo API: necesita ANTHROPIC_API_KEY (se paga por uso)
+        print(f"Post del {fecha} · pilar: {pilar}")
+        cliente = anthropic.Anthropic()
+        investigacion = investigar(cliente, fecha, pilar, temas_recientes(fecha))
+        terminar(fecha, pilar, escribir(cliente, fecha, pilar, investigacion), investigacion)
+
+    elif modo == "--preparar":
+        # Modo suscripción, paso 1: arma las instrucciones para Claude Code
+        carpeta.mkdir(parents=True, exist_ok=True)
+        pedido = carpeta / "pedido.md"
+        pedido.write_text(pedido_claude_code(fecha, pilar, temas_recientes(fecha)), encoding="utf-8")
+        print(pedido.relative_to(RAIZ))
+
+    elif modo == "--validar":
+        # Modo suscripción: Claude Code lo usa para revisar su post.json
+        problemas = validar(json.loads((carpeta / "post.json").read_text(encoding="utf-8")))
+        print("OK" if not problemas else "Corregir:\n- " + "\n- ".join(problemas))
+        sys.exit(1 if problemas else 0)
+
+    elif modo == "--terminar":
+        # Modo suscripción, paso 2: con el post.json que escribió Claude Code, arma todo lo demás
+        post = json.loads((carpeta / "post.json").read_text(encoding="utf-8"))
+        problemas = validar(post)
+        if problemas:
+            raise SystemExit("El post no pasó la validación:\n- " + "\n- ".join(problemas))
+        archivo_inv = carpeta / "investigacion.md"
+        investigacion = archivo_inv.read_text(encoding="utf-8") if archivo_inv.exists() else ""
+        (carpeta / "pedido.md").unlink(missing_ok=True)
+        terminar(fecha, pilar, post, investigacion)
+
+    else:
+        raise SystemExit(f"Modo desconocido: {modo}")
 
 
 if __name__ == "__main__":

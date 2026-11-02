@@ -34,12 +34,28 @@ jobs:
           pip install -r requirements.txt
           python -m playwright install --with-deps chromium
 
+      # Si existe CLAUDE_CODE_OAUTH_TOKEN usa tu suscripción de Claude (Claude Code);
+      # si no, usa la API con ANTHROPIC_API_KEY (pago por uso).
       - name: Generar texto y slides
         id: gen
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           FECHA: ${{ inputs.fecha }}
-        run: python bot/generar.py $FECHA
+        run: |
+          if [ -n "$CLAUDE_CODE_OAUTH_TOKEN" ]; then
+            npm install -g @anthropic-ai/claude-code
+            PEDIDO=$(python bot/generar.py --preparar $FECHA)
+            FECHA_POST=$(basename "$(dirname "$PEDIDO")")
+            unset ANTHROPIC_API_KEY
+            claude -p "$(cat "$PEDIDO")" \
+              --permission-mode dontAsk \
+              --allowedTools "Read,Write,Edit,Glob,Grep,WebSearch,WebFetch,Bash(python bot/generar.py --validar *)" \
+              --output-format text
+            python bot/generar.py --terminar "$FECHA_POST"
+          else
+            python bot/generar.py $FECHA
+          fi
 
       - name: Sumar quién comentó INFO
         env:

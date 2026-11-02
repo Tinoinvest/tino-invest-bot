@@ -29,11 +29,27 @@ Creá un repo **público** (por ejemplo `tino-invest-bot`) y subí estos archivo
 Tiene que ser público porque Threads descarga las imágenes desde una URL pública del repo.
 Las claves no se ven: van guardadas como *secrets*.
 
-### 2. Clave de Claude
+### 2. Conectar Claude
+
+Hay dos formas. El bot usa la que encuentre cargada (si están las dos, usa la suscripción).
+
+**A. Con tu suscripción de Claude (sin costo extra)**
+
+1. En la app Terminal de tu Mac, corré:
+   ```bash
+   npx -y @anthropic-ai/claude-code setup-token
+   ```
+2. Se abre el navegador: iniciá sesión con tu cuenta de Claude y autorizá.
+3. La terminal muestra un token largo (`sk-ant-oat…`). Copialo.
+4. En GitHub: **Settings → Secrets and variables → Actions → New repository secret**.
+   Nombre `CLAUDE_CODE_OAUTH_TOKEN`, valor: el token.
+
+Cada post consume parte del límite de uso de tu suscripción, como si le pidieras el post a Claude a mano.
+
+**B. Con la API (pago por uso)**
 
 1. Entrá a [console.anthropic.com](https://console.anthropic.com), cargá saldo y creá una API key.
-2. En GitHub: **Settings → Secrets and variables → Actions → New repository secret**.
-   Nombre `ANTHROPIC_API_KEY`, valor: la clave.
+2. Guardala como secret `ANTHROPIC_API_KEY`.
 
 Costo estimado: entre USD 0,30 y 0,60 por post (modelo Claude Opus 5.5 + hasta 8 búsquedas web), o sea, unos USD 10 a 18 por mes.
 
