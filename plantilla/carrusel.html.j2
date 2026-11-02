@@ -35,7 +35,8 @@
     font-weight: 700; font-size: 26px; letter-spacing: .08em; text-transform: uppercase;
   }
   .rail.top { top: 60px; }
-  .rail.bottom { bottom: 56px; font-weight: 600; font-size: 22px; letter-spacing: .06em; }
+  .rail.bottom { bottom: 56px; font-weight: 600; font-size: 22px; letter-spacing: .06em; align-items: flex-end; }
+  .rail.bottom span:last-child { white-space: nowrap; }
   .muted { color: var(--muted); }
   .dark .muted { color: #9DB3A5; }
   .brand { display: flex; align-items: center; gap: 14px; text-transform: none; letter-spacing: .01em; font-weight: 800; }
@@ -65,6 +66,10 @@
   .bar .fill { height: 84px; background: var(--ink); opacity: .35; }
   .bar.win .fill { background: var(--gold); opacity: 1; }
   .bar .num { font-weight: 800; font-size: 84px; letter-spacing: -.04em; white-space: nowrap; }
+  /* en el cierre las barras van más compactas para dejar lugar al título y al CTA */
+  .compacto .bar-label { font-size: 30px; margin-bottom: 8px; }
+  .compacto .bar .fill { height: 60px; }
+  .compacto .bar .num { font-size: 64px; }
   .cta { font-size: 40px; letter-spacing: -.01em; padding: 16px 26px 18px; }
   .cta span { color: var(--gold); }
 </style>
@@ -127,10 +132,10 @@
     {% if s.kicker %}<div class="kicker">{{ s.kicker }}</div>{% endif %}
     {% if s.barras %}
     {% set maximo = s.barras|map(attribute='valor_num')|max %}
-    <div>
+    <div class="compacto">
       {% for b in s.barras %}
       <div class="bar-label">{{ b.etiqueta }}</div>
-      <div class="bar{% if b.valor_num == maximo %} win{% endif %}" style="margin-bottom:{{ '0' if loop.last else '40px' }};">
+      <div class="bar{% if b.valor_num == maximo %} win{% endif %}" style="margin-bottom:{{ '0' if loop.last else '24px' }};">
         <div class="fill" style="width:{{ (600 * b.valor_num / maximo)|round|int if maximo > 0 else 0 }}px;"></div>
         <span class="num">{{ b.valor_texto }}</span>
       </div>
@@ -138,7 +143,7 @@
     </div>
     <div class="spacer"></div>
     {% endif %}
-    <div class="huge fit" data-max-h="{{ 330 if s.barras else 560 }}" style="font-size:{{ 100 if s.barras else 140 }}px; line-height:.95; letter-spacing:-.025em;">{{ s.titulo }}</div>
+    <div class="huge fit" data-max-h="{{ 260 if s.barras else 560 }}" style="font-size:{{ 90 if s.barras else 140 }}px; line-height:.95; letter-spacing:-.025em;">{{ s.titulo }}</div>
     {% if s.texto %}<div class="body fit" data-max-h="120">{{ s.texto|negritas }}</div>{% endif %}
     <div class="tile cta">Comentá <span>INFO</span> y te escribo</div>
   {% endif %}

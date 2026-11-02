@@ -12,6 +12,7 @@ import datetime as dt
 import json
 import os
 import sys
+import tempfile
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -305,7 +306,15 @@ def validar(post):
             problemas.append(f"Al slide {i} le faltan campos: {faltan}")
         if s.get("tipo") not in TIPOS_SLIDE:
             problemas.append(f"El slide {i} tiene un tipo inválido: {s.get('tipo')}")
-    return problemas or problemas_del_post(post)
+    return problemas or problemas_del_post(post) or problemas_de_diseno(post)
+
+
+def problemas_de_diseno(post):
+    """Arma los slides en una carpeta temporal y avisa cuáles no entran en el diseño."""
+    with tempfile.TemporaryDirectory() as tmp:
+        _, desbordes = renderizar(post, Path(tmp), os.environ.get("CANAL_CHROME"))
+    return [f"El slide {n} no entra en el diseño: acortá sus textos o sacale elementos "
+            "(en el cierre, menos barras o un título más corto)." for n in desbordes]
 
 
 def terminar(fecha, pilar, post, investigacion):
