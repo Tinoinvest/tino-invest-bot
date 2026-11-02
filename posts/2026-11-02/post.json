@@ -1,0 +1,126 @@
+{
+  "fecha": "2026-11-02",
+  "pilar": "El dato de la semana",
+  "tema": "Cuánto cuesta alquilar un m² en Asunción",
+  "texto": "¿Cuánto cuesta alquilar un m² en Asunción?\n\nEl promedio ronda USD 6 a 10 por m² al mes.\n\nPero la zona cambia todo 👇\n\nVilla Morra: ~USD 12/m²\nLas Lomas: ~USD 13,50/m²\n\nUn depto de 50 m² a USD 12 son ~USD 600 al mes (estimación).\n\nY la ocupación general ronda el 97%.\n\nEn los slides está el detalle.\n\n¿Querés ver cómo da la cuenta en tu caso? Comentá INFO y te escribo.",
+  "fuente": "Fuente: La Nación (abril 2026), Capadei, Remax · Estimaciones propias",
+  "slides": [
+    {
+      "tipo": "portada",
+      "kicker": "Asunción · Alquileres",
+      "titulo": "¿Cuánto cuesta alquilar un m²?",
+      "texto": "El dato de la semana.",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "numero",
+      "kicker": "El promedio de Asunción",
+      "prefijo": "USD",
+      "valor": "6 a 10",
+      "unidad": "/m²",
+      "texto": "Es lo que cuesta alquilar **un metro cuadrado por mes**, según Capadei.",
+      "titulo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "destacado",
+      "kicker": "En una zona buscada",
+      "valor": "~12",
+      "unidad": "USD/m²",
+      "texto": "En **Villa Morra** se pide ~USD 12 por m². En Las Lomas, ~USD 13,50.",
+      "titulo": "",
+      "prefijo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "cuenta",
+      "kicker": "Hagamos la cuenta",
+      "valor": "12",
+      "etiqueta": "USD por m² por mes",
+      "operacion": "× 50 m²",
+      "resultado": "~600",
+      "texto": "USD al mes por un depto chico (estimación).",
+      "titulo": "",
+      "prefijo": "",
+      "unidad": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "lista",
+      "kicker": "USD por m² al mes, por zona",
+      "items": [
+        {
+          "etiqueta": "Promedio Asunción",
+          "valor": "6 a 10"
+        },
+        {
+          "etiqueta": "Ycuá Satí",
+          "valor": "~11"
+        },
+        {
+          "etiqueta": "Villa Morra",
+          "valor": "~12"
+        },
+        {
+          "etiqueta": "Las Lomas",
+          "valor": "~13,50"
+        }
+      ],
+      "etiqueta": "Ocupación general",
+      "resultado": "~97%",
+      "titulo": "",
+      "texto": "",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "operacion": "",
+      "barras": []
+    },
+    {
+      "tipo": "cierre",
+      "kicker": "USD por m² al mes",
+      "barras": [
+        {
+          "etiqueta": "Promedio Asunción (tope)",
+          "valor_texto": "10",
+          "valor_num": 10
+        },
+        {
+          "etiqueta": "Villa Morra",
+          "valor_texto": "~12",
+          "valor_num": 12
+        },
+        {
+          "etiqueta": "Las Lomas",
+          "valor_texto": "~13,50",
+          "valor_num": 13.5
+        }
+      ],
+      "titulo": "La zona cambia el alquiler.",
+      "texto": "",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": []
+    }
+  ]
+}
