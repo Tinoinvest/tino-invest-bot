@@ -1,0 +1,117 @@
+{
+  "fecha": "2026-11-03",
+  "pilar": "Primera inversión",
+  "tema": "Cuánta plata necesitás para arrancar",
+  "texto": "¿Cuánta plata necesitás para comprar tu primer depto?\n\nNo es solo el precio 👇\n\nEjemplo: un depto de ~USD 75.000.\n\n• Entrada (20%): ~USD 15.000\n• Escritura y registro (~3%): ~USD 2.250\n• Arreglos y colchón: ~USD 2.050\n\nTotal para arrancar: ~USD 19.300.\nEs ~26% del precio, no 20%.\n\nLos gastos de escritura se pagan aparte, al firmar.\n\nEn los slides ves la cuenta paso a paso.\n\nSi estás pensando en tu primera inversión, comentá INFO y lo charlamos.",
+  "fuente": "Fuente: Hacé Cuentas PY · Estimaciones propias",
+  "slides": [
+    {
+      "tipo": "portada",
+      "kicker": "Primera inversión · Cuenta",
+      "titulo": "¿Cuánta plata necesitás para arrancar?",
+      "texto": "Spoiler: es más que la entrada.",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "numero",
+      "kicker": "Paso 1 · El precio",
+      "prefijo": "USD",
+      "valor": "75.000",
+      "unidad": "",
+      "texto": "Tomemos un **depto de ejemplo**. Las cifras son ilustrativas.",
+      "titulo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "cuenta",
+      "kicker": "Paso 2 · La entrada",
+      "valor": "75.000",
+      "etiqueta": "USD de precio",
+      "operacion": "× 20% de entrada",
+      "resultado": "15.000",
+      "texto": "USD de entrada (supuesto: depende del banco).",
+      "titulo": "",
+      "prefijo": "",
+      "unidad": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "lista",
+      "kicker": "Paso 3 · Lo que se suma",
+      "items": [
+        {
+          "etiqueta": "Escritura y registro (~3%)",
+          "valor": "~2.250"
+        },
+        {
+          "etiqueta": "Arreglos y amueblado",
+          "valor": "~1.500"
+        },
+        {
+          "etiqueta": "Un mes sin inquilino",
+          "valor": "~550"
+        }
+      ],
+      "etiqueta": "Extras en USD",
+      "resultado": "~4.300",
+      "titulo": "",
+      "texto": "",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "operacion": "",
+      "barras": []
+    },
+    {
+      "tipo": "destacado",
+      "kicker": "Paso 4 · Para arrancar",
+      "valor": "~19.300",
+      "unidad": "USD",
+      "texto": "15.000 + 4.300 = 19.300\nEs ~**26%** del precio, no solo el 20%.",
+      "titulo": "",
+      "prefijo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "cierre",
+      "kicker": "Para tener en cuenta",
+      "barras": [
+        {
+          "etiqueta": "Entrada",
+          "valor_texto": "~15.000",
+          "valor_num": 15000
+        },
+        {
+          "etiqueta": "Plata total para arrancar",
+          "valor_texto": "~19.300",
+          "valor_num": 19300
+        }
+      ],
+      "titulo": "Calculá el total, no solo la entrada.",
+      "texto": "El crédito no cubre los gastos de escritura.",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": []
+    }
+  ]
+}
