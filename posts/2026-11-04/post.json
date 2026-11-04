@@ -1,0 +1,109 @@
+{
+  "fecha": "2026-11-04",
+  "pilar": "Barrios y ciudades",
+  "tema": "Cuánto pesa el barrio en el precio",
+  "texto": "¿Cuánto pesa el barrio en el precio de un depto en Asunción?\n\nHagamos la cuenta 👇\n\nSegún Place Analyzer (2024), el m² en Villa Morra ronda USD 748 y en Recoleta USD 663.\n\nPara un depto de 60 m²:\n~USD 44.900 vs ~USD 39.800.\n\nSon ~USD 5.100 (~13%) solo por la ubicación.\n\nOjo: barrio caro no es lo mismo que mejor rentabilidad. Hay que mirar también el alquiler.\n\nEn los slides está la cuenta.\n\nComentá INFO y te paso más detalle.",
+  "fuente": "Fuente: Place Analyzer (Infonegocios, 2024) · Estimaciones propias",
+  "slides": [
+    {
+      "tipo": "portada",
+      "kicker": "Asunción · Barrios",
+      "titulo": "¿Cuánto pesa el barrio en el precio?",
+      "texto": "Hagamos la cuenta.",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "cuenta",
+      "kicker": "Paso 1 · Villa Morra",
+      "valor": "748",
+      "etiqueta": "USD por m² (Place Analyzer, 2024)",
+      "operacion": "× 60 m²",
+      "resultado": "44.880",
+      "texto": "USD por un depto de 60 m². Cuenta ilustrativa.",
+      "titulo": "",
+      "prefijo": "",
+      "unidad": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "cuenta",
+      "kicker": "Paso 2 · Recoleta",
+      "valor": "663",
+      "etiqueta": "USD por m² (Place Analyzer, 2024)",
+      "operacion": "× 60 m²",
+      "resultado": "39.780",
+      "texto": "USD por el mismo depto de 60 m².",
+      "titulo": "",
+      "prefijo": "",
+      "unidad": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "destacado",
+      "kicker": "Paso 3 · La diferencia",
+      "valor": "~13",
+      "unidad": "%",
+      "texto": "44.880 − 39.780 = ~5.100 USD.\nEs lo que pagás **solo por la ubicación**.",
+      "titulo": "",
+      "prefijo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "numero",
+      "kicker": "Y entre los extremos",
+      "prefijo": "",
+      "valor": "~31",
+      "unidad": "%",
+      "texto": "Manorá (USD 786/m²) cuesta ~31% más que Madame Lynch (USD 602/m²), el 10.º del ranking.",
+      "titulo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "cierre",
+      "kicker": "USD por m² según Place Analyzer",
+      "barras": [
+        {
+          "etiqueta": "Manorá",
+          "valor_texto": "786",
+          "valor_num": 786
+        },
+        {
+          "etiqueta": "Villa Morra",
+          "valor_texto": "748",
+          "valor_num": 748
+        },
+        {
+          "etiqueta": "Recoleta",
+          "valor_texto": "663",
+          "valor_num": 663
+        }
+      ],
+      "titulo": "Caro no siempre es mejor negocio.",
+      "texto": "Mirá también cuánto se alquila.",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": []
+    }
+  ]
+}
