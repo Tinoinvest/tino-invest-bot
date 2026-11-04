@@ -14,7 +14,8 @@ class Threads:
 
     def _get(self, ruta, **params):
         r = requests.get(f"{API}/{ruta}", params={**params, "access_token": self.token}, timeout=60)
-        r.raise_for_status()
+        if not r.ok:
+            raise RuntimeError(f"Threads respondió {r.status_code}: {r.text}")
         return r.json()
 
     def _post(self, ruta, **params):
