@@ -1,0 +1,113 @@
+{
+  "fecha": "2026-11-05",
+  "pilar": "Hagamos la cuenta",
+  "tema": "Depto de 2 dormitorios para familia en Asunción",
+  "texto": "¿Cuánto rinde un depto de 2 dormitorios para alquilar?\n\nHagamos la cuenta 👇\n\nUn depto de 70 m² a ~USD 1.800 el m² cuesta ~USD 126.000.\nAlquilado a ~USD 8 el m² son ~USD 560/mes → ~USD 6.720 al año.\n\nEso es ~5,3% bruto.\n\nRestale impuestos, mantenimiento y un mes vacío y quedan ~3,9% neto.\n\nSon estimaciones: el precio por m² cambia mucho el resultado.\n\nEn los slides está la cuenta completa.\n\nComentá INFO y te paso más detalle.",
+  "fuente": "Fuente: La Nación (abr 2026), Capadei · Estimaciones propias",
+  "slides": [
+    {
+      "tipo": "portada",
+      "kicker": "Asunción · 2 dormitorios",
+      "titulo": "¿Cuánto rinde un depto familiar?",
+      "texto": "Hagamos la cuenta.",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "numero",
+      "kicker": "Paso 1 · Lo que cuesta",
+      "prefijo": "USD",
+      "valor": "126.000",
+      "unidad": "",
+      "texto": "Un depto de **70 m²** a ~USD 1.800 el m². Cifra estimada, varía por barrio.",
+      "titulo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "cuenta",
+      "kicker": "Paso 2 · Lo que te paga",
+      "valor": "560",
+      "etiqueta": "USD por mes (70 m² × ~USD 8)",
+      "operacion": "× 12 meses",
+      "resultado": "6.720",
+      "texto": "USD por año, a ~USD 8 el m².",
+      "titulo": "",
+      "prefijo": "",
+      "unidad": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "destacado",
+      "kicker": "Paso 3 · Rentabilidad bruta",
+      "valor": "5,3",
+      "unidad": "%",
+      "texto": "6.720 ÷ 126.000 = 0,053\nEs lo que rinde **antes** de gastos.",
+      "titulo": "",
+      "prefijo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "lista",
+      "kicker": "Paso 4 · Restale los gastos",
+      "items": [
+        {
+          "etiqueta": "Impuestos y mantenimiento",
+          "valor": "− 1,0%"
+        },
+        {
+          "etiqueta": "Un mes sin inquilino",
+          "valor": "− 0,4%"
+        }
+      ],
+      "etiqueta": "Te queda neto",
+      "resultado": "~3,9%",
+      "titulo": "",
+      "texto": "",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "operacion": "",
+      "barras": []
+    },
+    {
+      "tipo": "cierre",
+      "kicker": "Bruto vs. neto",
+      "barras": [
+        {
+          "etiqueta": "Rentabilidad bruta",
+          "valor_texto": "~5,3%",
+          "valor_num": 5.3
+        },
+        {
+          "etiqueta": "Rentabilidad neta",
+          "valor_texto": "~3,9%",
+          "valor_num": 3.9
+        }
+      ],
+      "titulo": "El precio por m² cambia toda la cuenta.",
+      "texto": "",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": []
+    }
+  ]
+}
