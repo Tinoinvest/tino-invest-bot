@@ -1,0 +1,117 @@
+{
+  "fecha": "2026-11-06",
+  "pilar": "Errores y mitos",
+  "tema": "Gastos de escritura y comisiones al comprar",
+  "texto": "¿El precio publicado es todo lo que pagás al comprar un depto? No.\n\nHagamos la cuenta 👇\n\nEn un depto de USD 100.000, escribano, registro, tasa municipal y gestiones suman ~3%: ~USD 3.000 extra, en efectivo al firmar. El crédito no los cubre.\n\nLa comisión de venta (~5% + IVA) suele pagarla el vendedor, pero se negocia.\n\nPedí el presupuesto completo antes de firmar. Detalle en los slides.\n\nComentá INFO y te paso más detalle.",
+  "fuente": "Fuente: Hacé Cuentas Paraguay (Ley 1307/87) · Estimaciones propias",
+  "slides": [
+    {
+      "tipo": "portada",
+      "kicker": "Errores y mitos · Compra",
+      "titulo": "¿El precio es todo lo que pagás?",
+      "texto": "Los gastos que nadie cuenta.",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "numero",
+      "kicker": "Paso 1 · El precio publicado",
+      "prefijo": "USD",
+      "valor": "100.000",
+      "unidad": "",
+      "texto": "Un depto de ejemplo. Parece **todo lo que ponés**, pero todavía falta escriturar.",
+      "titulo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "lista",
+      "kicker": "Paso 2 · Gastos de escritura",
+      "items": [
+        {
+          "etiqueta": "Escribano + IVA",
+          "valor": "~1,5%"
+        },
+        {
+          "etiqueta": "Registro y tasa municipal",
+          "valor": "~1%"
+        },
+        {
+          "etiqueta": "Certificados y gestiones",
+          "valor": "~0,5%"
+        }
+      ],
+      "etiqueta": "Extra al comprar",
+      "resultado": "~3%",
+      "titulo": "",
+      "texto": "",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "operacion": "",
+      "barras": []
+    },
+    {
+      "tipo": "cuenta",
+      "kicker": "Paso 3 · En dólares",
+      "valor": "100.000",
+      "etiqueta": "USD de precio",
+      "operacion": "× 3%",
+      "resultado": "~3.000",
+      "texto": "USD extra, **en efectivo al firmar**.",
+      "titulo": "",
+      "prefijo": "",
+      "unidad": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "destacado",
+      "kicker": "Y la comisión inmobiliaria",
+      "valor": "~5",
+      "unidad": "%",
+      "texto": "Es lo habitual en ventas, más IVA. Suele pagarla el **vendedor**, pero se negocia.",
+      "titulo": "",
+      "prefijo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "cierre",
+      "kicker": "Precio vs. costo real",
+      "barras": [
+        {
+          "etiqueta": "Precio publicado",
+          "valor_texto": "USD 100.000",
+          "valor_num": 100
+        },
+        {
+          "etiqueta": "Con gastos de compra",
+          "valor_texto": "~USD 103.000",
+          "valor_num": 103
+        }
+      ],
+      "titulo": "Mirá el costo total, no solo el precio",
+      "texto": "",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": []
+    }
+  ]
+}
