@@ -1,0 +1,108 @@
+{
+  "fecha": "2026-11-07",
+  "pilar": "Paraguay vs. la región",
+  "tema": "Inflación: Paraguay vs. la región",
+  "texto": "¿Cuánto te come la inflación cuando invertís?\n\nMirá la inflación anual de septiembre 👇\n\nArgentina: 33,4%\nUruguay: ~4,7%\nBrasil: ~4,6%\nParaguay: ~1,7%\n\nCon precios más estables es más fácil hacer cuentas a largo plazo: alquileres, expensas y costos no se mueven tanto.\n\nNo garantiza nada, pero es un punto a favor.\n\nEn los slides te muestro la comparación.\n\nComentá INFO y te paso más detalle.",
+  "fuente": "Fuente: BCP, Prensa Mercosur, Bloomberg · sept. 2026 · Estimaciones propias",
+  "slides": [
+    {
+      "tipo": "portada",
+      "kicker": "Paraguay · La región",
+      "titulo": "¿Cuánto te come la inflación?",
+      "texto": "Paraguay vs. sus vecinos.",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "numero",
+      "kicker": "Paraguay · Septiembre 2026",
+      "prefijo": "",
+      "valor": "1,7",
+      "unidad": "%",
+      "texto": "Inflación anual en Paraguay, **por debajo de la meta del BCP** (3,5%).",
+      "titulo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "destacado",
+      "kicker": "Argentina · Septiembre 2026",
+      "prefijo": "",
+      "valor": "33,4",
+      "unidad": "%",
+      "texto": "Inflación anual en Argentina: los precios subieron **casi 20 veces más** que en Paraguay.",
+      "titulo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "lista",
+      "kicker": "Los otros vecinos",
+      "items": [
+        {
+          "etiqueta": "Uruguay",
+          "valor": "~4,7%"
+        },
+        {
+          "etiqueta": "Brasil",
+          "valor": "~4,6%"
+        },
+        {
+          "etiqueta": "Argentina",
+          "valor": "33,4%"
+        }
+      ],
+      "etiqueta": "Paraguay",
+      "resultado": "~1,7%",
+      "titulo": "",
+      "texto": "",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "operacion": "",
+      "barras": []
+    },
+    {
+      "tipo": "cierre",
+      "kicker": "Inflación anual · Sept. 2026",
+      "barras": [
+        {
+          "etiqueta": "Paraguay",
+          "valor_texto": "~1,7%",
+          "valor_num": 1.7
+        },
+        {
+          "etiqueta": "Brasil",
+          "valor_texto": "~4,6%",
+          "valor_num": 4.6
+        },
+        {
+          "etiqueta": "Uruguay",
+          "valor_texto": "~4,7%",
+          "valor_num": 4.7
+        }
+      ],
+      "titulo": "Precios estables, cuentas más claras.",
+      "texto": "",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": []
+    }
+  ]
+}
