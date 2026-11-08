@@ -1,0 +1,103 @@
+{
+  "fecha": "2026-11-08",
+  "pilar": "Pregunta abierta",
+  "tema": "¿Comprarías en pozo o terminado?",
+  "texto": "¿Comprarías en pozo o terminado?\n\nEl pozo suele ser más barato. Pero esperás la obra.\n\nCuenta ilustrativa 👇\nTerminado: ~USD 100.000.\nEn pozo, con ~10% menos: ~USD 90.000. Ahorrás ~USD 10.000.\n\nPero 24 meses de espera, a ~USD 550/mes de alquiler, son ~USD 13.200 que no cobrás.\n\n¿Qué elegirías vos? Contame.\n\nComentá INFO y te paso más detalle.",
+  "fuente": "Fuente: referencias regionales · Estimaciones propias",
+  "slides": [
+    {
+      "tipo": "portada",
+      "kicker": "Pregunta · Pozo vs. terminado",
+      "titulo": "¿Pozo o terminado?",
+      "texto": "Hagamos la cuenta simple.",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "numero",
+      "kicker": "Paso 1 · Lo que ahorrás en pozo",
+      "titulo": "",
+      "prefijo": "USD ~",
+      "valor": "10.000",
+      "unidad": "",
+      "texto": "Un depto de ~USD 100.000 terminado, con **~10% menos** si lo comprás en pozo.",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "cuenta",
+      "kicker": "Paso 2 · Lo que no cobrás",
+      "titulo": "",
+      "prefijo": "",
+      "valor": "550",
+      "unidad": "",
+      "etiqueta": "USD por mes de alquiler",
+      "operacion": "× 24 meses",
+      "resultado": "13.200",
+      "texto": "USD de alquiler que **no cobrás** en la obra.",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "lista",
+      "kicker": "Paso 3 · Ojo con el pozo",
+      "titulo": "",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "Hay que mirar",
+      "operacion": "",
+      "resultado": "3 cosas",
+      "texto": "",
+      "items": [
+        {
+          "etiqueta": "Plazo de entrega",
+          "valor": "¿Cumple?"
+        },
+        {
+          "etiqueta": "Ajuste de cuotas",
+          "valor": "¿Cuánto?"
+        },
+        {
+          "etiqueta": "Quién construye",
+          "valor": "¿Trayectoria?"
+        }
+      ],
+      "barras": []
+    },
+    {
+      "tipo": "cierre",
+      "kicker": "¿Cómo da la cuenta?",
+      "titulo": "¿Vos qué elegirías? Contame.",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "texto": "Cifras ilustrativas.",
+      "items": [],
+      "barras": [
+        {
+          "etiqueta": "Ahorro por comprar en pozo",
+          "valor_texto": "~10.000",
+          "valor_num": 10000
+        },
+        {
+          "etiqueta": "Alquiler no cobrado (24 meses)",
+          "valor_texto": "~13.200",
+          "valor_num": 13200
+        }
+      ]
+    }
+  ]
+}
