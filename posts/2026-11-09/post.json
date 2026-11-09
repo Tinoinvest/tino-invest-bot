@@ -1,0 +1,106 @@
+{
+  "fecha": "2026-11-09",
+  "pilar": "El dato de la semana",
+  "tema": "Dólar a la baja: qué pasa con un alquiler en USD",
+  "texto": "¿El dólar cayó ~22% frente al guaraní en 12 meses y tu alquiler en USD lo sintió?\n\nHagamos la cuenta 👇\n\nAlquiler de USD 550:\n• Hace un año (~G. 8.000): G. 4.400.000\n• A fines de abril (~G. 6.190): G. 3.404.500\n\nSon ~G. 1.000.000 menos al mes en guaraníes, con el mismo depto.\n\nSi tus gastos son en guaraníes, se nota. Si tu meta es en dólares, no cambia.\n\n¿Querés ver cómo da la cuenta en tu caso? Comentá INFO y te escribo.",
+  "fuente": "Fuente: ABC Color (29/04/2026), BCP · Estimaciones propias",
+  "slides": [
+    {
+      "tipo": "portada",
+      "kicker": "Dólar · Guaraní",
+      "titulo": "¿Qué pasa si el dólar baja?",
+      "texto": "Hagamos la cuenta simple.",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "destacado",
+      "kicker": "El dato",
+      "valor": "22",
+      "unidad": "%",
+      "texto": "Cayó el dólar frente al guaraní en 12 meses, a **~G. 6.190** a fines de abril.",
+      "titulo": "",
+      "prefijo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "cuenta",
+      "kicker": "Paso 1 · Hace un año",
+      "valor": "550",
+      "etiqueta": "USD de alquiler al mes",
+      "operacion": "× G. 8.000",
+      "resultado": "4.400.000",
+      "texto": "Guaraníes por mes, a ~G. 8.000 por dólar.",
+      "titulo": "",
+      "prefijo": "",
+      "unidad": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "cuenta",
+      "kicker": "Paso 2 · Con el dólar bajo",
+      "valor": "550",
+      "etiqueta": "USD de alquiler al mes",
+      "operacion": "× G. 6.190",
+      "resultado": "3.404.500",
+      "texto": "Guaraníes por mes. El alquiler es el mismo.",
+      "titulo": "",
+      "prefijo": "",
+      "unidad": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "lista",
+      "kicker": "Paso 3 · Qué cambió",
+      "items": [
+        {
+          "etiqueta": "Alquiler en dólares",
+          "valor": "Igual"
+        },
+        {
+          "etiqueta": "Alquiler en guaraníes",
+          "valor": "~ − 23%"
+        },
+        {
+          "etiqueta": "Gastos en guaraníes",
+          "valor": "Igual"
+        }
+      ],
+      "etiqueta": "Menos por mes (G.)",
+      "resultado": "~1 M",
+      "titulo": "",
+      "texto": "",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "operacion": "",
+      "barras": []
+    },
+    {
+      "tipo": "cierre",
+      "kicker": "Para tener en cuenta",
+      "barras": [],
+      "titulo": "Pensá en la moneda de tus gastos.",
+      "texto": "El tipo de cambio sube y baja. Cotizaciones redondeadas, de abril de 2026.",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": []
+    }
+  ]
+}
