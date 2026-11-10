@@ -1,0 +1,117 @@
+{
+  "fecha": "2026-11-10",
+  "pilar": "Primera inversión",
+  "tema": "Rentabilidad bruta vs. neta",
+  "texto": "Te dicen \"rinde 8%\". ¿8% de qué?\n\nHay dos números y no son lo mismo 👇\n\nBruta: el alquiler del año ÷ el precio. En un depto de ~USD 100.000 que alquilás a ~USD 700/mes: 8,4%.\n\nNeta: lo que queda después de mes vacío, mantenimiento e impuestos: ~6,9%.\n\nCompará siempre neta con neta.\n\nEn los slides está la cuenta completa.\n\nSi estás pensando en tu primera inversión, comentá INFO y lo charlamos.",
+  "fuente": "Fuente: Infonegocios, Última Hora · Estimaciones propias",
+  "slides": [
+    {
+      "tipo": "portada",
+      "kicker": "Primera inversión",
+      "titulo": "Rinde 8%... ¿de qué?",
+      "texto": "Bruta vs. neta, en simple.",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "numero",
+      "kicker": "Paso 1 · El precio",
+      "prefijo": "USD",
+      "valor": "100.000",
+      "unidad": "",
+      "texto": "Un depto de ejemplo. Los números son **ilustrativos** para entender la cuenta.",
+      "titulo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "cuenta",
+      "kicker": "Paso 2 · El alquiler",
+      "valor": "700",
+      "etiqueta": "USD por mes de alquiler",
+      "operacion": "× 12 meses",
+      "resultado": "8.400",
+      "texto": "USD por año, antes de gastos.",
+      "titulo": "",
+      "prefijo": "",
+      "unidad": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "destacado",
+      "kicker": "Paso 3 · Rentabilidad bruta",
+      "valor": "8,4",
+      "unidad": "%",
+      "texto": "8.400 ÷ 100.000 = 0,084\nEs lo que rinde **antes** de gastos.",
+      "titulo": "",
+      "prefijo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "lista",
+      "kicker": "Paso 4 · Restale los gastos",
+      "items": [
+        {
+          "etiqueta": "Un mes sin inquilino",
+          "valor": "− 0,7%"
+        },
+        {
+          "etiqueta": "Mantenimiento",
+          "valor": "− 0,5%"
+        },
+        {
+          "etiqueta": "Impuestos",
+          "valor": "− 0,3%"
+        }
+      ],
+      "etiqueta": "Rentabilidad neta",
+      "resultado": "~6,9%",
+      "titulo": "",
+      "texto": "",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "operacion": "",
+      "barras": []
+    },
+    {
+      "tipo": "cierre",
+      "kicker": "La diferencia",
+      "barras": [
+        {
+          "etiqueta": "Rentabilidad bruta",
+          "valor_texto": "8,4%",
+          "valor_num": 8.4
+        },
+        {
+          "etiqueta": "Rentabilidad neta (estimada)",
+          "valor_texto": "~6,9%",
+          "valor_num": 6.9
+        }
+      ],
+      "titulo": "Compará siempre neta con neta.",
+      "texto": "",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": []
+    }
+  ]
+}
