@@ -1,0 +1,113 @@
+{
+  "fecha": "2026-11-11",
+  "pilar": "Barrios y ciudades",
+  "tema": "Asunción o Gran Asunción: dónde vive la gente",
+  "texto": "¿Invertir en Asunción o en el Gran Asunción?\n\nMirá dónde vive la gente 👇\n\nAsunción: ~462.000 habitantes.\nDepartamento Central: ~1.883.000.\n\nO sea, unas 4 veces más.\nLuque y San Lorenzo juntas ya suman más que la capital (Censo 2022).\n\nMás gente = más posibles inquilinos. Pero ojo: cada ciudad tiene su perfil, su precio y sus riesgos.\n\nEn los slides va la cuenta.\n\nComentá INFO y te paso más detalle.",
+  "fuente": "Fuente: INE, Censo 2022 · Cuentas propias",
+  "slides": [
+    {
+      "tipo": "portada",
+      "kicker": "Asunción · Gran Asunción",
+      "titulo": "¿Capital o ciudades vecinas?",
+      "texto": "Mirá dónde vive la gente.",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "numero",
+      "kicker": "Paso 1 · La capital",
+      "prefijo": "",
+      "valor": "462.000",
+      "unidad": "",
+      "texto": "Habitantes de **Asunción** según el Censo 2022. Perdió gente hacia otras ciudades.",
+      "titulo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "cuenta",
+      "kicker": "Paso 2 · El área metropolitana",
+      "valor": "1.883.000",
+      "etiqueta": "habitantes en el Dpto. Central",
+      "operacion": "÷ 462.000 de Asunción",
+      "resultado": "≈ 4,1",
+      "texto": "Unas **4 veces** más gente que la capital.",
+      "titulo": "",
+      "prefijo": "",
+      "unidad": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "lista",
+      "kicker": "Paso 3 · Ciudades grandes",
+      "items": [
+        {
+          "etiqueta": "Luque",
+          "valor": "259.705"
+        },
+        {
+          "etiqueta": "San Lorenzo",
+          "valor": "225.395"
+        }
+      ],
+      "etiqueta": "Juntas suman",
+      "resultado": "485.100",
+      "titulo": "",
+      "texto": "",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "operacion": "",
+      "barras": []
+    },
+    {
+      "tipo": "destacado",
+      "kicker": "Lo que significa",
+      "valor": "485.100",
+      "unidad": "hab.",
+      "texto": "Dos ciudades vecinas ya tienen **más gente** que Asunción (462.000). La demanda de vivienda también está afuera.",
+      "titulo": "",
+      "prefijo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "cierre",
+      "kicker": "Ojo con esto",
+      "barras": [
+        {
+          "etiqueta": "Asunción (hab.)",
+          "valor_texto": "462 mil",
+          "valor_num": 462
+        },
+        {
+          "etiqueta": "Dpto. Central (hab.)",
+          "valor_texto": "1,88 millones",
+          "valor_num": 1883
+        }
+      ],
+      "titulo": "Más gente no siempre es mejor negocio.",
+      "texto": "Cada ciudad tiene su perfil, precio y riesgo.",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": []
+    }
+  ]
+}
