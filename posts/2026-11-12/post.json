@@ -1,0 +1,113 @@
+{
+  "fecha": "2026-11-12",
+  "pilar": "Hagamos la cuenta",
+  "tema": "Terreno o lote: compra y espera",
+  "texto": "¿Comprar un lote y esperar a que suba conviene?\n\nHagamos la cuenta 👇\n\nUn lote de ~USD 50.000 no paga alquiler, pero sí tiene costos:\n\nImpuesto inmobiliario (1% del valor fiscal, hasta ~USD 500) + limpieza y mantenimiento (~USD 300).\n\nSon ~USD 800 al año. En 5 años, ~USD 4.000 → 8%.\n\nO sea: tiene que subir más de 8% solo para empatar.\n\nComentá INFO y te paso más detalle.",
+  "fuente": "Fuente: Última Hora, Catastro · Estimaciones propias",
+  "slides": [
+    {
+      "tipo": "portada",
+      "kicker": "Terreno · Lote",
+      "titulo": "¿Comprar un lote y esperar?",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "texto": "Hagamos la cuenta de la espera.",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "numero",
+      "kicker": "Paso 1 · Lo que cuesta",
+      "titulo": "",
+      "prefijo": "USD",
+      "valor": "~50.000",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "texto": "Un lote de ejemplo (cifra **ilustrativa**). No paga alquiler: solo vive de que suba.",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "lista",
+      "kicker": "Paso 2 · Lo que cuesta esperar",
+      "titulo": "",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "Costo por año",
+      "operacion": "",
+      "resultado": "~800",
+      "texto": "",
+      "items": [
+        {
+          "etiqueta": "Impuesto (1% fiscal, tope)",
+          "valor": "~USD 500"
+        },
+        {
+          "etiqueta": "Limpieza y mantenimiento",
+          "valor": "~USD 300"
+        }
+      ],
+      "barras": []
+    },
+    {
+      "tipo": "cuenta",
+      "kicker": "Paso 3 · Cinco años de espera",
+      "titulo": "",
+      "prefijo": "",
+      "valor": "800",
+      "unidad": "",
+      "etiqueta": "USD de costo por año",
+      "operacion": "× 5 años",
+      "resultado": "4.000",
+      "texto": "USD que ponés sin cobrar nada.",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "destacado",
+      "kicker": "Paso 4 · Para empatar",
+      "titulo": "",
+      "prefijo": "",
+      "valor": "8",
+      "unidad": "%",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "texto": "4.000 ÷ 50.000 = 0,08\nEl lote tiene que subir **más que eso** solo para cubrir costos.",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "cierre",
+      "kicker": "No es magia",
+      "titulo": "Esperar también tiene costo.",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "texto": "El valor fiscal suele estar bajo el de mercado: tu impuesto real puede ser menor.",
+      "items": [],
+      "barras": [
+        {
+          "etiqueta": "Costo de 5 años de espera",
+          "valor_texto": "~8%",
+          "valor_num": 8
+        },
+        {
+          "etiqueta": "Costo de 1 año",
+          "valor_texto": "~1,6%",
+          "valor_num": 1.6
+        }
+      ]
+    }
+  ]
+}
