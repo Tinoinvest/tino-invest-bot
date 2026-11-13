@@ -1,0 +1,117 @@
+{
+  "fecha": "2026-11-13",
+  "pilar": "Errores y mitos",
+  "tema": "Subestimar los meses sin inquilino",
+  "texto": "¿Un mes sin inquilino es \"solo un mes\"?\n\nHagamos la cuenta 👇\n\nUn mes vacío es 1/12 del año: te saca 8,3% del alquiler anual.\n\nCon un alquiler de ~USD 550/mes:\n· 1 mes vacío = ~USD 550 menos\n· 2 meses vacíos = ~USD 1.100 menos\n\nHay demanda, pero contá con algún mes sin cobrar.\n\nEn los slides va el detalle.\n\n¿Querés ver cómo da la cuenta en tu caso? Comentá INFO y te escribo.",
+  "fuente": "Fuente: RE/MAX, La Nación · Estimaciones propias",
+  "slides": [
+    {
+      "tipo": "portada",
+      "kicker": "Errores y mitos · Alquiler",
+      "titulo": "¿Un mes vacío es solo un mes?",
+      "texto": "Hagamos la cuenta.",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "cuenta",
+      "kicker": "Paso 1 · El alquiler soñado",
+      "valor": "550",
+      "etiqueta": "USD por mes (ejemplo)",
+      "operacion": "× 12 meses",
+      "resultado": "6.600",
+      "texto": "USD por año, si **nunca** se vacía.",
+      "titulo": "",
+      "prefijo": "",
+      "unidad": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "destacado",
+      "kicker": "Paso 2 · Lo que pesa un mes",
+      "valor": "8,3",
+      "unidad": "%",
+      "texto": "1 ÷ 12 = 0,083\nCada mes vacío te saca esa parte del año.",
+      "titulo": "",
+      "prefijo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "lista",
+      "kicker": "Paso 3 · Con meses vacíos",
+      "items": [
+        {
+          "etiqueta": "Alquiler de 12 meses",
+          "valor": "6.600"
+        },
+        {
+          "etiqueta": "Menos 1 mes vacío",
+          "valor": "− 550"
+        },
+        {
+          "etiqueta": "Menos 2 meses vacíos",
+          "valor": "− 1.100"
+        }
+      ],
+      "etiqueta": "Con 2 vacíos cobrás (USD)",
+      "resultado": "5.500",
+      "titulo": "",
+      "texto": "",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "operacion": "",
+      "barras": []
+    },
+    {
+      "tipo": "numero",
+      "kicker": "Ojo · Hay demanda, no garantía",
+      "prefijo": "",
+      "valor": "~5",
+      "unidad": "",
+      "texto": "Interesados por cada depto en Asunción (RE/MAX). **Ayuda, pero** el mes de cambio igual existe.",
+      "titulo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "cierre",
+      "kicker": "Lo que pierdas del alquiler anual",
+      "barras": [
+        {
+          "etiqueta": "1 mes vacío",
+          "valor_texto": "−8,3%",
+          "valor_num": 8.3
+        },
+        {
+          "etiqueta": "2 meses vacíos",
+          "valor_texto": "−16,7%",
+          "valor_num": 16.7
+        }
+      ],
+      "titulo": "Contá los meses vacíos en tu cuenta.",
+      "texto": "",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": []
+    }
+  ]
+}
