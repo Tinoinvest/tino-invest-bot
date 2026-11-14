@@ -1,0 +1,117 @@
+{
+  "fecha": "2026-11-14",
+  "pilar": "Hagamos la cuenta",
+  "tema": "Unidad en Airbnb: ocupación y gastos",
+  "texto": "¿Alquilar por noche en Asunción rinde más?\n\nHagamos la cuenta 👇\n\nUna noche sale ~USD 45.\nSi estuviera lleno todo el año: ~USD 16.425.\n\nPero la ocupación real va de 40% a 69% según la fuente: entre ~USD 6.570 y ~USD 11.333 al año.\n\nY a eso restale limpieza, servicios y comisiones: te queda ~65%.\n\nTodo depende de cuánto lo llenes. Los slides tienen el detalle.\n\n¿Querés ver cómo da la cuenta en tu caso? Comentá INFO y te escribo.",
+  "fuente": "Fuente: Airbtics, BnBCalc · Estimaciones propias",
+  "slides": [
+    {
+      "tipo": "portada",
+      "kicker": "Asunción · Airbnb",
+      "titulo": "¿Rinde más alquilar por noche?",
+      "texto": "Hagamos la cuenta.",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "numero",
+      "kicker": "Paso 1 · Lo que cobrás",
+      "prefijo": "USD",
+      "valor": "45",
+      "unidad": "",
+      "texto": "Tarifa promedio por **noche** de un alquiler temporario en Asunción.",
+      "titulo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "cuenta",
+      "kicker": "Paso 2 · El techo",
+      "valor": "45",
+      "etiqueta": "USD por noche",
+      "operacion": "× 365 noches",
+      "resultado": "16.425",
+      "texto": "USD al año si **siempre** estuviera lleno.",
+      "titulo": "",
+      "prefijo": "",
+      "unidad": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "destacado",
+      "kicker": "Paso 3 · La ocupación",
+      "valor": "40–69",
+      "unidad": "%",
+      "texto": "Según la fuente, así de lleno está el año. De ahí sale **todo** el ingreso.",
+      "titulo": "",
+      "prefijo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "lista",
+      "kicker": "Paso 4 · Restale los gastos",
+      "items": [
+        {
+          "etiqueta": "Plataforma y gestión",
+          "valor": "~ − 10%"
+        },
+        {
+          "etiqueta": "Limpieza y reposición",
+          "valor": "~ − 10%"
+        },
+        {
+          "etiqueta": "Servicios y expensas",
+          "valor": "~ − 15%"
+        }
+      ],
+      "etiqueta": "Te queda del ingreso",
+      "resultado": "~65%",
+      "titulo": "",
+      "texto": "",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "operacion": "",
+      "barras": []
+    },
+    {
+      "tipo": "cierre",
+      "kicker": "Ingreso bruto por año",
+      "barras": [
+        {
+          "etiqueta": "Ocupación 40%",
+          "valor_texto": "~USD 6.570",
+          "valor_num": 6570
+        },
+        {
+          "etiqueta": "Ocupación 69%",
+          "valor_texto": "~USD 11.333",
+          "valor_num": 11333
+        }
+      ],
+      "titulo": "Todo depende de cuánto lo llenes",
+      "texto": "",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": []
+    }
+  ]
+}
