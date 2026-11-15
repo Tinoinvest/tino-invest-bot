@@ -1,0 +1,96 @@
+{
+  "fecha": "2026-11-15",
+  "pilar": "Pregunta abierta",
+  "tema": "¿Qué te frena para dar el primer paso?",
+  "texto": "Pregunta para charlar 👇\n\nUna encuesta reciente dice que solo ~26% cree que conseguir un crédito hipotecario en Paraguay es fácil.\n\nY existen programas para primera vivienda, con tasas desde 6,5% y hasta 30 años de plazo.\n\n¿Qué es lo que más te frena para invertir?\nA) La entrada\nB) El crédito\nC) No saber por dónde empezar\nD) Miedo a equivocarme\n\nContame en los comentarios. Comentá INFO y te escribo.",
+  "fuente": "Fuente: Última Hora, MUVH · Datos de jul 2026",
+  "slides": [
+    {
+      "tipo": "portada",
+      "kicker": "Pregunta abierta",
+      "titulo": "¿Qué te frena para invertir?",
+      "texto": "Hablemos claro.",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "numero",
+      "kicker": "El crédito, según la gente",
+      "prefijo": "",
+      "valor": "26",
+      "unidad": "%",
+      "texto": "Solo ese porcentaje cree que **conseguir un crédito** hipotecario es fácil o muy fácil.",
+      "titulo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "numero",
+      "kicker": "Pero hay programas",
+      "prefijo": "",
+      "valor": "6,5",
+      "unidad": "%",
+      "texto": "Tasa desde la que arranca Che Róga Porã para primera vivienda, a hasta **30 años**. Depende del ingreso.",
+      "titulo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "lista",
+      "kicker": "Tu turno · Elegí una",
+      "items": [
+        {
+          "etiqueta": "La entrada",
+          "valor": "A"
+        },
+        {
+          "etiqueta": "Conseguir el crédito",
+          "valor": "B"
+        },
+        {
+          "etiqueta": "No saber por dónde empezar",
+          "valor": "C"
+        },
+        {
+          "etiqueta": "Miedo a equivocarme",
+          "valor": "D"
+        }
+      ],
+      "etiqueta": "¿Cuál es la tuya?",
+      "resultado": "A-D",
+      "titulo": "",
+      "texto": "",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "operacion": "",
+      "barras": []
+    },
+    {
+      "tipo": "cierre",
+      "kicker": "Contame en los comentarios",
+      "barras": [],
+      "titulo": "Todos empezamos con una duda.",
+      "texto": "Dejá tu letra y la charlamos.",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": []
+    }
+  ]
+}
