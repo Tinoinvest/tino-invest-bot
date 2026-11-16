@@ -1,0 +1,117 @@
+{
+  "fecha": "2026-11-16",
+  "pilar": "El dato de la semana",
+  "tema": "Inflación de 1,7%: qué significa para un alquiler",
+  "texto": "¿Cuánto subió el costo de vida en Paraguay? Un 1,7% en 12 meses (octubre, BCP).\n\n¿Y eso qué tiene que ver con tu inversión?\n\nHagamos la cuenta 👇\nUn alquiler de Gs. 3.000.000 ajustado por 1,7% sube ~Gs. 51.000 al mes.\n\nPoco movimiento. Pero el mercado espera ~3% para fin de año.\n\nEn los slides te muestro la cuenta.\n\n¿Querés ver cómo da la cuenta en tu caso? Comentá INFO y te escribo.",
+  "fuente": "Fuente: BCP, InfoNegocios · Estimaciones propias",
+  "slides": [
+    {
+      "tipo": "portada",
+      "kicker": "Paraguay · Inflación",
+      "titulo": "¿Qué significa una inflación de 1,7%?",
+      "texto": "El dato de la semana.",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "destacado",
+      "kicker": "El dato · Octubre 2026",
+      "valor": "1,7",
+      "unidad": "%",
+      "texto": "Inflación **interanual** de octubre. En el mes, los precios bajaron 0,1%.",
+      "titulo": "",
+      "prefijo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "cuenta",
+      "kicker": "Paso 1 · Un alquiler de ejemplo",
+      "valor": "3.000.000",
+      "etiqueta": "Gs. por mes de alquiler",
+      "operacion": "× 1,7%",
+      "resultado": "51.000",
+      "texto": "Gs. más por mes si se ajusta por inflación.",
+      "titulo": "",
+      "prefijo": "",
+      "unidad": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "numero",
+      "kicker": "Paso 2 · Lo que espera el mercado",
+      "prefijo": "",
+      "valor": "3,0",
+      "unidad": "%",
+      "texto": "Inflación **esperada** para cierre de 2026. Es una expectativa, no una promesa.",
+      "titulo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "lista",
+      "kicker": "Paso 3 · Qué mirar en tu contrato",
+      "items": [
+        {
+          "etiqueta": "Ajuste por inflación",
+          "valor": "¿Está?"
+        },
+        {
+          "etiqueta": "Moneda del alquiler",
+          "valor": "Gs. o USD"
+        },
+        {
+          "etiqueta": "Cada cuánto se ajusta",
+          "valor": "Anual"
+        }
+      ],
+      "etiqueta": "Clave",
+      "resultado": "Contrato",
+      "titulo": "",
+      "texto": "",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "operacion": "",
+      "barras": []
+    },
+    {
+      "tipo": "cierre",
+      "kicker": "Inflación: realizada vs. esperada",
+      "barras": [
+        {
+          "etiqueta": "Octubre 2026 (interanual)",
+          "valor_texto": "1,7%",
+          "valor_num": 1.7
+        },
+        {
+          "etiqueta": "Esperada fin de 2026",
+          "valor_texto": "3,0%",
+          "valor_num": 3
+        }
+      ],
+      "titulo": "Precios estables, pero seguí el dato.",
+      "texto": "",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": []
+    }
+  ]
+}
