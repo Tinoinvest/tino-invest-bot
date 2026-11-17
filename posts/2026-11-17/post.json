@@ -1,0 +1,117 @@
+{
+  "fecha": "2026-11-17",
+  "pilar": "Primera inversión",
+  "tema": "Financiación: cómo funciona un crédito hipotecario",
+  "texto": "¿Comprar con crédito hipotecario cierra la cuenta?\n\nHagamos la cuenta simple 👇\n\nDepto de ~USD 75.000. El banco suele financiar hasta 80%: ~USD 60.000, a 20 años y ~9,6% anual.\n\nLa cuota da ~USD 563/mes. Un alquiler de ~USD 550 casi ni la cubre.\n\nEn 20 años pagás ~USD 135.000: ~USD 75.000 son intereses.\n\nNo es malo, pero hay que hacer la cuenta.\n\nEn los slides ves el detalle.\n\nSi estás pensando en tu primera inversión, comentá INFO y lo charlamos.",
+  "fuente": "Fuente: BCP, AFD · Estimaciones propias",
+  "slides": [
+    {
+      "tipo": "portada",
+      "kicker": "Primera inversión · Crédito",
+      "titulo": "¿Te conviene comprar con crédito?",
+      "texto": "Hagamos la cuenta simple.",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "numero",
+      "kicker": "Paso 1 · Cuánto te presta",
+      "prefijo": "USD",
+      "valor": "60.000",
+      "unidad": "",
+      "texto": "Un banco suele financiar hasta **80%** de un depto de ~USD 75.000. El resto es tu entrada.",
+      "titulo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "numero",
+      "kicker": "Paso 2 · A qué tasa",
+      "prefijo": "",
+      "valor": "9,6",
+      "unidad": "%",
+      "texto": "Tasa promedio anual del **crédito para vivienda** (BCP, julio 2026), a 20 años.",
+      "titulo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "cuenta",
+      "kicker": "Paso 3 · Tu cuota",
+      "valor": "563",
+      "etiqueta": "USD de cuota por mes",
+      "operacion": "× 240 meses",
+      "resultado": "~135.000",
+      "texto": "USD que devolvés en total.",
+      "titulo": "",
+      "prefijo": "",
+      "unidad": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "lista",
+      "kicker": "Paso 4 · Contra el alquiler",
+      "items": [
+        {
+          "etiqueta": "Cuota del crédito",
+          "valor": "~USD 563"
+        },
+        {
+          "etiqueta": "Alquiler que cobrás",
+          "valor": "~USD 550"
+        },
+        {
+          "etiqueta": "Intereses en 20 años",
+          "valor": "~USD 75.000"
+        }
+      ],
+      "etiqueta": "Cada mes ponés",
+      "resultado": "~USD 13",
+      "titulo": "",
+      "texto": "",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "operacion": "",
+      "barras": []
+    },
+    {
+      "tipo": "cierre",
+      "kicker": "Antes de pedir un crédito",
+      "barras": [
+        {
+          "etiqueta": "Lo que pedís prestado",
+          "valor_texto": "USD 60.000",
+          "valor_num": 60000
+        },
+        {
+          "etiqueta": "Lo que devolvés en total",
+          "valor_texto": "~USD 135.000",
+          "valor_num": 135000
+        }
+      ],
+      "titulo": "El crédito pesa. Hacé la cuenta.",
+      "texto": "",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": []
+    }
+  ]
+}
