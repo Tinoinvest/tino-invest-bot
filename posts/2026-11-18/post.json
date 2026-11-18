@@ -1,0 +1,104 @@
+{
+  "fecha": "2026-11-18",
+  "pilar": "Barrios y ciudades",
+  "tema": "Luque: por qué la miran y por qué la zona exacta pesa",
+  "texto": "¿Por qué tanta gente mira Luque?\n\nTiene ~260.000 habitantes: es la 3.ª ciudad más poblada del país (Censo 2022). Y está cerca del aeropuerto y de grandes avenidas.\n\nPero ojo 👇\nSegún avisos de lotes, el m² va de ~USD 70 a ~USD 176.\n\nEn un lote de 400 m², eso es ~USD 28.000 vs. ~USD 70.400.\n\nEn Luque no alcanza con elegir la ciudad: importa la calle. Son avisos, no un promedio. Detalle en los slides.\n\nComentá INFO y te paso más detalle.",
+  "fuente": "Fuente: INE (Censo 2022), Última Hora, Infonegocios, avisos Century 21 · Estimaciones propias",
+  "slides": [
+    {
+      "tipo": "portada",
+      "kicker": "Gran Asunción · Luque",
+      "titulo": "¿Por qué todos miran Luque?",
+      "texto": "Mirá más allá de la ciudad.",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "numero",
+      "kicker": "Paso 1 · Cuánta gente vive",
+      "prefijo": "",
+      "valor": "259.705",
+      "unidad": "",
+      "texto": "habitantes según el Censo 2022: la **3.ª ciudad más poblada** del país.",
+      "titulo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "cuenta",
+      "kicker": "Paso 2 · Un lote económico",
+      "valor": "70",
+      "etiqueta": "USD por m² (aviso publicado)",
+      "operacion": "× 400 m²",
+      "resultado": "28.000",
+      "texto": "USD por un lote de 400 m². Estimación.",
+      "titulo": "",
+      "prefijo": "",
+      "unidad": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "cuenta",
+      "kicker": "Paso 3 · Un lote cerca del centro",
+      "valor": "176",
+      "etiqueta": "USD por m² (aviso publicado)",
+      "operacion": "× 400 m²",
+      "resultado": "70.400",
+      "texto": "USD por el mismo tamaño. Estimación.",
+      "titulo": "",
+      "prefijo": "",
+      "unidad": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "destacado",
+      "kicker": "Paso 4 · La diferencia",
+      "valor": "2,5",
+      "unidad": "×",
+      "texto": "176 ÷ 70 ≈ 2,5\nEn la misma ciudad, un m² puede costar **más del doble** según la zona.",
+      "titulo": "",
+      "prefijo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "cierre",
+      "kicker": "m² de lote en Luque (avisos)",
+      "barras": [
+        {
+          "etiqueta": "Lote económico",
+          "valor_texto": "~USD 70",
+          "valor_num": 70
+        },
+        {
+          "etiqueta": "Lote cerca del centro",
+          "valor_texto": "~USD 176",
+          "valor_num": 176
+        }
+      ],
+      "titulo": "En Luque, mirá la calle, no la ciudad",
+      "texto": "Son precios de aviso, no un promedio.",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": []
+    }
+  ]
+}
