@@ -1,0 +1,122 @@
+{
+  "fecha": "2026-11-19",
+  "pilar": "Hagamos la cuenta",
+  "tema": "Cuotas en pozo: cuánto pagás hasta la entrega",
+  "texto": "¿Comprar en pozo es pagar \"de a poquito\"? Hagamos la cuenta 👇\n\nUn monoambiente de ~36 m² cuesta ~USD 70.770:\n\n• Al firmar: ~USD 14.156 (20%)\n• 30 cuotas de ~USD 1.651 = ~USD 49.530 (70%)\n• Al recibirlo: ~USD 7.077 (10%)\n\nSon ~2,5 años de cuotas antes de recibir las llaves y cobrar un alquiler.\n\nNo es magia: te financiás, pero te comprometés.\n\nEn los slides está la cuenta completa.\n\nComentá INFO y te paso más detalle.",
+  "fuente": "Fuente: anuncio en portal inmobiliario (Zonaprop) · Estimaciones propias",
+  "slides": [
+    {
+      "tipo": "portada",
+      "kicker": "Asunción · Depto en pozo",
+      "titulo": "¿Cuánto pagás hasta la entrega?",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "texto": "Hagamos la cuenta.",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "numero",
+      "kicker": "Paso 1 · El precio",
+      "titulo": "",
+      "prefijo": "USD",
+      "valor": "70.770",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "texto": "Un **monoambiente de ~36 m²** en pozo, con entrega en unos 3 años.",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "cuenta",
+      "kicker": "Paso 2 · Al firmar",
+      "titulo": "",
+      "prefijo": "",
+      "valor": "70.770",
+      "unidad": "",
+      "etiqueta": "USD de precio total",
+      "operacion": "× 20% de entrega",
+      "resultado": "~14.156",
+      "texto": "USD que ponés **el día que firmás**.",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "cuenta",
+      "kicker": "Paso 3 · Durante la obra",
+      "titulo": "",
+      "prefijo": "",
+      "valor": "1.651",
+      "unidad": "",
+      "etiqueta": "USD por mes",
+      "operacion": "× 30 cuotas",
+      "resultado": "~49.530",
+      "texto": "USD en cuotas: **~70% del precio**.",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "lista",
+      "kicker": "Paso 4 · Sumá todo",
+      "titulo": "",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "operacion": "",
+      "texto": "",
+      "items": [
+        {
+          "etiqueta": "Al firmar (20%)",
+          "valor": "~14.156"
+        },
+        {
+          "etiqueta": "30 cuotas (70%)",
+          "valor": "~49.530"
+        },
+        {
+          "etiqueta": "Al recibirlo (10%)",
+          "valor": "~7.077"
+        }
+      ],
+      "etiqueta": "Total en USD",
+      "resultado": "~70.770",
+      "barras": []
+    },
+    {
+      "tipo": "cierre",
+      "kicker": "¿Cuándo ponés la plata?",
+      "titulo": "Se paga de a poco, pero se paga.",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "texto": "Ojo: ~2,5 años de cuotas sin cobrar alquiler.",
+      "items": [],
+      "barras": [
+        {
+          "etiqueta": "Al firmar",
+          "valor_texto": "20%",
+          "valor_num": 20
+        },
+        {
+          "etiqueta": "En cuotas",
+          "valor_texto": "70%",
+          "valor_num": 70
+        },
+        {
+          "etiqueta": "Al recibirlo",
+          "valor_texto": "10%",
+          "valor_num": 10
+        }
+      ]
+    }
+  ]
+}
