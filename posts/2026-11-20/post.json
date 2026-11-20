@@ -1,0 +1,90 @@
+{
+  "fecha": "2026-11-20",
+  "pilar": "Errores y mitos",
+  "tema": "Mito: los ladrillos siempre suben",
+  "texto": "¿Es cierto que los ladrillos siempre suben?\n\nNo siempre. Y no parejo.\n\nEn Asunción los deptos nuevos subieron ~17,5%, pero el mercado venía de varios años de recesión.\n\nLos alquileres subieron 12% entre 2020 y 2024, contra 26% de una referencia del sector.\n\nUn depto de USD 100.000 que no se mueve pierde ~USD 3.500 al año de poder de compra (con 3,5% de inflación).\n\nEn los slides está la cuenta 👇\n\nComentá INFO y te paso más detalle.",
+  "fuente": "Fuente: Citrino vía ABC Color, BCP · Estimaciones propias",
+  "slides": [
+    {
+      "tipo": "portada",
+      "kicker": "Errores y mitos",
+      "titulo": "¿Los ladrillos siempre suben?",
+      "texto": "Un mito que conviene revisar.",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "destacado",
+      "kicker": "Lo que sí pasó",
+      "valor": "~17,5",
+      "unidad": "%",
+      "texto": "Subieron los deptos nuevos en Asunción. Pero venían de **varios años de recesión**.",
+      "titulo": "",
+      "prefijo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "numero",
+      "kicker": "Alquileres 2020-2024",
+      "prefijo": "",
+      "valor": "12",
+      "unidad": "%",
+      "texto": "Es lo que subieron los alquileres, contra **26%** de una referencia del sector.",
+      "titulo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "cuenta",
+      "kicker": "Hagamos la cuenta",
+      "valor": "100.000",
+      "etiqueta": "USD, valor de tu depto hoy",
+      "operacion": "× 3,5% inflación",
+      "resultado": "~3.500",
+      "texto": "Poder de compra que perdés al año si no sube.",
+      "titulo": "",
+      "prefijo": "",
+      "unidad": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "cierre",
+      "kicker": "Alquileres 2020-2024",
+      "barras": [
+        {
+          "etiqueta": "Alquileres en Asunción",
+          "valor_texto": "+12%",
+          "valor_num": 12
+        },
+        {
+          "etiqueta": "Referencia del sector",
+          "valor_texto": "+26%",
+          "valor_num": 26
+        }
+      ],
+      "titulo": "Sube según zona, precio y momento.",
+      "texto": "",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": []
+    }
+  ]
+}
