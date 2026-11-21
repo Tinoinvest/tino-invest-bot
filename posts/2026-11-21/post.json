@@ -1,0 +1,122 @@
+{
+  "fecha": "2026-11-21",
+  "pilar": "Paraguay vs. la región",
+  "tema": "Residencia para extranjeros que invierten: Paraguay vs. la región",
+  "texto": "¿Cuánto hay que invertir para tener residencia en la región?\n\nHagamos la comparación 👇\n\n📍 Paraguay (Investor Pass): desde USD 200.000 en inmuebles.\n📍 Uruguay: ~USD 400.000 en bienes.\n📍 Brasil (Viper): ~USD 200.000.\n\nEn Paraguay, además, el 90% de los trámites es digital.\n\nOjo: los requisitos cambian, confirmalos en Migraciones. En los slides está el detalle.\n\nComentá INFO y te paso más detalle.",
+  "fuente": "Fuente: ABC Color (abr. 2026)",
+  "slides": [
+    {
+      "tipo": "portada",
+      "kicker": "Paraguay · Residencia",
+      "titulo": "¿Cuánto cuesta una residencia?",
+      "texto": "Paraguay vs. la región.",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "destacado",
+      "kicker": "Paraguay · Investor Pass",
+      "valor": "200.000",
+      "unidad": "USD",
+      "texto": "Inversión mínima en **inmuebles** para pedir la residencia permanente directa.",
+      "titulo": "",
+      "prefijo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "lista",
+      "kicker": "Tres vías en Paraguay",
+      "items": [
+        {
+          "etiqueta": "Sector turístico",
+          "valor": "USD 150.000"
+        },
+        {
+          "etiqueta": "Mercado de valores",
+          "valor": "USD 200.000"
+        },
+        {
+          "etiqueta": "Inmuebles",
+          "valor": "USD 200.000"
+        }
+      ],
+      "etiqueta": "Piso de entrada",
+      "resultado": "150.000",
+      "titulo": "",
+      "texto": "",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "operacion": "",
+      "barras": []
+    },
+    {
+      "tipo": "numero",
+      "kicker": "Uruguay · Residencia fiscal",
+      "prefijo": "~USD",
+      "valor": "400.000",
+      "unidad": "",
+      "texto": "En bienes, y hay que pasar **al menos 60 días al año** en el país.",
+      "titulo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "numero",
+      "kicker": "Brasil · Programa Viper",
+      "prefijo": "~USD",
+      "valor": "200.000",
+      "unidad": "",
+      "texto": "En empresas o inmuebles. Da residencia permanente inmediata.",
+      "titulo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "cierre",
+      "kicker": "Inversión mínima en inmuebles",
+      "barras": [
+        {
+          "etiqueta": "Paraguay",
+          "valor_texto": "USD 200.000",
+          "valor_num": 200000
+        },
+        {
+          "etiqueta": "Brasil (Viper)",
+          "valor_texto": "~USD 200.000",
+          "valor_num": 200000
+        },
+        {
+          "etiqueta": "Uruguay",
+          "valor_texto": "~USD 400.000",
+          "valor_num": 400000
+        }
+      ],
+      "titulo": "Confirmá siempre los requisitos vigentes.",
+      "texto": "Los montos pueden cambiar.",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": []
+    }
+  ]
+}
