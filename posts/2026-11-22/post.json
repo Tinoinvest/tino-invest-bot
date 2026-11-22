@@ -1,0 +1,96 @@
+{
+  "fecha": "2026-11-22",
+  "pilar": "Pregunta abierta",
+  "tema": "Alquiler tradicional o temporario: ¿cuál elegirías?",
+  "texto": "¿Alquiler de largo plazo o por día (tipo Airbnb)? ¿Cuál elegirías?\n\nCada uno tiene su costo 👇\n\nLargo plazo: ingreso más estable, menos trabajo.\n\nTemporario: puede rendir más, pero hay que gestionarlo y la oferta crece rápido. En Asunción, la ocupación ronda ~62%.\n\nNinguno es magia: depende de tu tiempo y tu zona.\n\nDetalle en los slides. Contame qué elegirías y comentá INFO y te escribo.",
+  "fuente": "Fuente: Airbtics, AirDNA · Estimaciones propias",
+  "slides": [
+    {
+      "tipo": "portada",
+      "kicker": "Asunción · Alquiler",
+      "titulo": "¿Largo plazo o por día?",
+      "texto": "¿Cuál elegirías?",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "numero",
+      "kicker": "Temporario · Ocupación",
+      "prefijo": "~",
+      "valor": "62",
+      "unidad": "%",
+      "texto": "Ocupación mediana de un Airbnb en Asunción. **Casi 4 de cada 10 noches** quedan vacías.",
+      "titulo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "destacado",
+      "kicker": "Temporario · Competencia",
+      "valor": "+48",
+      "unidad": "%",
+      "texto": "Creció la oferta de alquileres por día en un año, mientras la tarifa diaria bajó ~2%.",
+      "titulo": "",
+      "prefijo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "lista",
+      "kicker": "Largo plazo vs. por día",
+      "items": [
+        {
+          "etiqueta": "Largo plazo: ingreso",
+          "valor": "Estable"
+        },
+        {
+          "etiqueta": "Largo plazo: trabajo",
+          "valor": "Poco"
+        },
+        {
+          "etiqueta": "Por día: ingreso",
+          "valor": "Variable"
+        },
+        {
+          "etiqueta": "Por día: trabajo",
+          "valor": "Mucho"
+        }
+      ],
+      "etiqueta": "Depende de",
+      "resultado": "Vos",
+      "titulo": "",
+      "texto": "",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "operacion": "",
+      "barras": []
+    },
+    {
+      "tipo": "cierre",
+      "kicker": "Contame en comentarios",
+      "barras": [],
+      "titulo": "¿Estabilidad o más rendimiento?",
+      "texto": "Ninguno es magia: depende de tu tiempo y tu zona.",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": []
+    }
+  ]
+}
