@@ -1,0 +1,117 @@
+{
+  "fecha": "2026-11-23",
+  "pilar": "El dato de la semana",
+  "tema": "Ocupación del alquiler en Asunción: qué significa el 97%",
+  "texto": "¿Cuántos deptos en alquiler están ocupados en Asunción?\n\nSegún La Nación (abril 2026), cerca del 97% 👇\n\nHagamos la cuenta: el 3% de 12 meses son ~0,4 meses vacíos al año (unos 11 días).\n\nEn alquiler corto de zonas premium baja a 87%-90%: ~1,2 a 1,6 meses sin huéspedes.\n\nOjo: es un promedio de ciudad. Tu unidad puede rendir distinto.\n\nEn los slides te muestro la cuenta.\n\nComentá INFO y te paso más detalle.",
+  "fuente": "Fuente: La Nación (abril 2026), Capadei · Estimaciones propias",
+  "slides": [
+    {
+      "tipo": "portada",
+      "kicker": "Asunción · Ocupación",
+      "titulo": "¿Cuántos alquileres están ocupados?",
+      "texto": "El dato de la semana.",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "destacado",
+      "kicker": "El dato",
+      "valor": "97",
+      "unidad": "%",
+      "texto": "Es la **ocupación aproximada** del alquiler en Asunción, según La Nación (abril 2026).",
+      "titulo": "",
+      "prefijo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "cuenta",
+      "kicker": "Paso 1 · El 3% vacío",
+      "valor": "3%",
+      "etiqueta": "de vacío sobre 12 meses",
+      "operacion": "× 12 meses",
+      "resultado": "~0,4",
+      "texto": "Meses sin inquilino al año: unos **11 días**.",
+      "titulo": "",
+      "prefijo": "",
+      "unidad": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "numero",
+      "kicker": "Paso 2 · Renta corta premium",
+      "prefijo": "",
+      "valor": "87-90",
+      "unidad": "%",
+      "texto": "Ocupación en **alquiler temporal** de zonas premium. Es más vacío que en el tradicional.",
+      "titulo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "lista",
+      "kicker": "Paso 3 · Meses vacíos por año",
+      "items": [
+        {
+          "etiqueta": "Tradicional (97%)",
+          "valor": "~0,4 meses"
+        },
+        {
+          "etiqueta": "Temporal (90%)",
+          "valor": "~1,2 meses"
+        },
+        {
+          "etiqueta": "Temporal (87%)",
+          "valor": "~1,6 meses"
+        }
+      ],
+      "etiqueta": "Ojo",
+      "resultado": "Promedio",
+      "titulo": "",
+      "texto": "",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "operacion": "",
+      "barras": []
+    },
+    {
+      "tipo": "cierre",
+      "kicker": "Meses vacíos al año (estimado)",
+      "barras": [
+        {
+          "etiqueta": "Alquiler tradicional",
+          "valor_texto": "~0,4",
+          "valor_num": 0.4
+        },
+        {
+          "etiqueta": "Alquiler temporal",
+          "valor_texto": "~1,2 a 1,6",
+          "valor_num": 1.4
+        }
+      ],
+      "titulo": "Es un promedio, no una promesa.",
+      "texto": "",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": []
+    }
+  ]
+}
