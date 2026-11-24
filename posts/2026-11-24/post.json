@@ -1,0 +1,93 @@
+{
+  "fecha": "2026-11-24",
+  "pilar": "Primera inversión",
+  "tema": "Glosario: plusvalía, expensas, escritura, yield",
+  "texto": "¿Te suenan raras las palabras de inversión inmobiliaria?\n\nCuatro que tenés que conocer 👇\n\n• Expensas: la cuota mensual del edificio.\n• Escritura: el documento que te hace dueño.\n• Plusvalía: lo que sube el valor de tu depto.\n• Yield: alquiler anual ÷ precio.\n\nEjemplo: USD 6.600 al año ÷ USD 75.000 = 8,8% bruto.\n\nEn los slides te lo explico simple.\n\nSi estás pensando en tu primera inversión, comentá INFO y lo charlamos.",
+  "fuente": "Cifras ilustrativas · Estimaciones propias",
+  "slides": [
+    {
+      "tipo": "portada",
+      "kicker": "Glosario · 4 palabras",
+      "titulo": "¿Hablás el idioma inversor?",
+      "texto": "Cuatro términos para arrancar.",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "numero",
+      "kicker": "1 · Expensas",
+      "prefijo": "",
+      "valor": "Mensual",
+      "unidad": "",
+      "texto": "La cuota del **edificio**: limpieza, ascensor, seguridad. Se resta de lo que te deja el alquiler.",
+      "titulo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "numero",
+      "kicker": "2 · Escritura",
+      "prefijo": "",
+      "valor": "1 vez",
+      "unidad": "",
+      "texto": "El documento que te hace **dueño** ante la ley. Tiene gastos: preguntalos antes de comprar.",
+      "titulo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "cuenta",
+      "kicker": "3 · Plusvalía",
+      "valor": "75.000",
+      "etiqueta": "USD pagaste (ejemplo)",
+      "operacion": "Hoy vale 80.000",
+      "resultado": "+5.000",
+      "texto": "Es la **ganancia** si el valor sube. No está garantizada.",
+      "titulo": "",
+      "prefijo": "",
+      "unidad": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "destacado",
+      "kicker": "4 · Yield",
+      "valor": "8,8",
+      "unidad": "%",
+      "texto": "6.600 ÷ 75.000 = 0,088\nAlquiler anual ÷ precio: la rentabilidad **bruta**, antes de gastos.",
+      "titulo": "",
+      "prefijo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "cierre",
+      "kicker": "Ahora sí",
+      "barras": [],
+      "titulo": "Con 4 palabras ya podés arrancar.",
+      "texto": "",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": []
+    }
+  ]
+}
