@@ -1,0 +1,96 @@
+{
+  "fecha": "2026-11-25",
+  "pilar": "Barrios y ciudades",
+  "tema": "Encarnación: la Costanera y el efecto Carnaval",
+  "texto": "¿Por qué tanta gente mira Encarnación?\n\nSegún Century 21 Black, un depto se alquila desde ~G. 1.500.000. Pero ojo: la demanda se concentra en febrero, con el Carnaval.\n\nY el valor no está parejo: los corredores que más subieron son la Costanera y el frente al río Paraná.\n\nUn mercado hoy más selectivo: la zona exacta y la época del año pesan.\n\nEn los slides te muestro el detalle 👇\n\n¿Querés ver cómo da la cuenta en tu caso? Comentá INFO y te escribo.",
+  "fuente": "Fuente: InfoNegocios (nov. 2026), Century 21 Black, Brexxia",
+  "slides": [
+    {
+      "tipo": "portada",
+      "kicker": "Encarnación · Interior",
+      "titulo": "¿Por qué miran Encarnación?",
+      "texto": "La zona y la época pesan.",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "numero",
+      "kicker": "Lo que cuesta alquilar",
+      "prefijo": "G.",
+      "valor": "1.500.000",
+      "unidad": "",
+      "texto": "Desde ahí se alquila un **departamento** en Encarnación, según una asesora de Century 21 Black.",
+      "titulo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "destacado",
+      "kicker": "Cuándo hay demanda",
+      "valor": "Febrero",
+      "unidad": "",
+      "texto": "La demanda se concentra en el **Carnaval**: muchos alquilan por pocos días.",
+      "titulo": "",
+      "prefijo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "lista",
+      "kicker": "Dónde se concentra el valor",
+      "items": [
+        {
+          "etiqueta": "Costanera",
+          "valor": "Corredor"
+        },
+        {
+          "etiqueta": "Frente al río Paraná",
+          "valor": "Corredor"
+        },
+        {
+          "etiqueta": "Cambyretá",
+          "valor": "Expansión"
+        },
+        {
+          "etiqueta": "San Juan del Paraná",
+          "valor": "Expansión"
+        }
+      ],
+      "etiqueta": "Mercado hoy",
+      "resultado": "Selectivo",
+      "titulo": "",
+      "texto": "",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "operacion": "",
+      "barras": []
+    },
+    {
+      "tipo": "cierre",
+      "kicker": "Qué mirar antes de decidir",
+      "barras": [],
+      "titulo": "Zona exacta y época del año.",
+      "texto": "Un mes fuerte no es un año entero: hacé la cuenta con los meses flojos.",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": []
+    }
+  ]
+}
