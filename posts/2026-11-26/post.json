@@ -1,0 +1,118 @@
+{
+  "fecha": "2026-11-26",
+  "pilar": "Hagamos la cuenta",
+  "tema": "Monoambiente para alquilar en Asunción",
+  "texto": "¿Un monoambiente para alquilar en Asunción da la cuenta?\n\nHagamos la cuenta simple 👇\n\nEl alquiler promedio va de USD 6 a 10 por m² (Capadei).\nUn monoambiente de ~35 m² a ~USD 8/m² = ~USD 280/mes.\n\n~USD 3.360 al año sobre ~USD 70.000 → ~4,8% bruto.\n\nRestale un mes vacío, impuestos y mantenimiento y queda ~3,9% neto.\n\nEl precio de compra mueve todo. Los slides tienen el detalle.\n\n¿Querés ver cómo da la cuenta en tu caso? Comentá INFO y te escribo.",
+  "fuente": "Fuente: Capadei (La Nación, abr. 2026) · Estimaciones propias",
+  "slides": [
+    {
+      "tipo": "portada",
+      "kicker": "Asunción · Monoambiente",
+      "titulo": "¿Un monoambiente da la cuenta?",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "texto": "Hagamos la cuenta simple.",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "numero",
+      "kicker": "Paso 1 · Lo que cuesta",
+      "titulo": "",
+      "prefijo": "~USD",
+      "valor": "70.000",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "texto": "Un monoambiente de **~35 m²** a ~USD 2.000 el m². Precio estimado.",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "cuenta",
+      "kicker": "Paso 2 · Lo que te paga",
+      "titulo": "",
+      "prefijo": "",
+      "valor": "280",
+      "unidad": "",
+      "etiqueta": "USD por mes (35 m² × USD 8)",
+      "operacion": "× 12 meses",
+      "resultado": "3.360",
+      "texto": "USD por año. El m² va de USD 6 a 10.",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "destacado",
+      "kicker": "Paso 3 · Rentabilidad bruta",
+      "titulo": "",
+      "prefijo": "",
+      "valor": "4,8",
+      "unidad": "%",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "texto": "3.360 ÷ 70.000 = 0,048\nEs lo que rinde **antes** de gastos.",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "lista",
+      "kicker": "Paso 4 · Restale los gastos",
+      "titulo": "",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "operacion": "",
+      "texto": "",
+      "items": [
+        {
+          "etiqueta": "Un mes sin inquilino",
+          "valor": "− 0,4%"
+        },
+        {
+          "etiqueta": "Impuestos y mantenimiento",
+          "valor": "− 0,5%"
+        }
+      ],
+      "barras": [],
+      "etiqueta": "Te queda neto",
+      "resultado": "~3,9%"
+    },
+    {
+      "tipo": "cierre",
+      "kicker": "Según el alquiler por m²",
+      "titulo": "Tu precio de compra cambia todo.",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "texto": "Rentabilidad bruta estimada.",
+      "items": [],
+      "barras": [
+        {
+          "etiqueta": "Alquiler USD 6/m²",
+          "valor_texto": "~3,6%",
+          "valor_num": 3.6
+        },
+        {
+          "etiqueta": "Alquiler USD 8/m²",
+          "valor_texto": "~4,8%",
+          "valor_num": 4.8
+        },
+        {
+          "etiqueta": "Alquiler USD 10/m²",
+          "valor_texto": "~6,0%",
+          "valor_num": 6
+        }
+      ]
+    }
+  ]
+}
