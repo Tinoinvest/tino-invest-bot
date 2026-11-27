@@ -1,0 +1,92 @@
+{
+  "fecha": "2026-11-27",
+  "pilar": "Errores y mitos",
+  "tema": "Comprar sin ver el reglamento del edificio",
+  "texto": "¿Leíste el reglamento del edificio antes de comprar?\n\nMucha gente no. Y ahí aparecen las sorpresas.\n\nEl reglamento define qué podés hacer con tu depto: alquilar por días, tener mascotas, reformar. Y cómo se reparten las expensas.\n\nEjemplo: ~USD 100/mes de expensas son ~USD 1.200 al año que salen de tu rentabilidad.\n\nPedilo antes de firmar y revisalo con un escribano 👇\n\nComentá INFO y te paso más detalle.",
+  "fuente": "Estimaciones propias · Cifras ilustrativas",
+  "slides": [
+    {
+      "tipo": "portada",
+      "kicker": "Errores · Reglamento",
+      "titulo": "¿Leíste el reglamento antes?",
+      "texto": "Lo que nadie mira al comprar.",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "lista",
+      "kicker": "Error 1 · Las reglas",
+      "items": [
+        {
+          "etiqueta": "Alquilar por días",
+          "valor": "¿Se puede?"
+        },
+        {
+          "etiqueta": "Tener mascotas",
+          "valor": "¿Se puede?"
+        },
+        {
+          "etiqueta": "Reformar la unidad",
+          "valor": "¿Se puede?"
+        }
+      ],
+      "etiqueta": "Lo define el reglamento",
+      "resultado": "Leelo",
+      "titulo": "",
+      "texto": "",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "operacion": "",
+      "barras": []
+    },
+    {
+      "tipo": "cuenta",
+      "kicker": "Error 2 · Las expensas",
+      "valor": "100",
+      "etiqueta": "USD/mes de expensas (ejemplo)",
+      "operacion": "× 12 meses",
+      "resultado": "1.200",
+      "texto": "USD al año que restan de tu renta.",
+      "titulo": "",
+      "prefijo": "",
+      "unidad": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "destacado",
+      "kicker": "La regla de oro",
+      "valor": "1",
+      "unidad": "documento",
+      "texto": "Pedí el reglamento y las últimas actas **antes** de firmar. Consultalo con un escribano.",
+      "titulo": "",
+      "prefijo": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "cierre",
+      "kicker": "Antes de firmar",
+      "barras": [],
+      "titulo": "Leer cuesta una tarde. No leer, años.",
+      "texto": "",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": []
+    }
+  ]
+}
