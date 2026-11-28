@@ -1,0 +1,113 @@
+{
+  "fecha": "2026-11-28",
+  "pilar": "Hagamos la cuenta",
+  "tema": "Cuánto IRP pagás por un alquiler",
+  "texto": "Alquilás un depto y te preguntás: ¿cuánto se lleva el impuesto?\n\nHagamos la cuenta 👇\n\nEjemplo: alquiler de ~USD 550/mes = ~USD 6.600 al año.\n\nEl IRP del alquiler es 8%, y se calcula sobre el 50% del alquiler (o menos, si documentás gastos).\n\n3.300 × 8% = ~USD 264 al año.\nEs ~4% del alquiler, como máximo.\n\nPoco, pero hay que contarlo. Detalle en los slides.\n\nComentá INFO y te paso más detalle.",
+  "fuente": "Fuente: DNIT · Estimaciones propias",
+  "slides": [
+    {
+      "tipo": "portada",
+      "kicker": "Alquiler · Impuestos",
+      "titulo": "¿Cuánto IRP pagás por alquilar?",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "texto": "Hagamos la cuenta.",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "cuenta",
+      "kicker": "Paso 1 · Lo que cobrás",
+      "prefijo": "",
+      "titulo": "",
+      "valor": "550",
+      "unidad": "",
+      "etiqueta": "USD por mes de alquiler",
+      "operacion": "× 12 meses",
+      "resultado": "6.600",
+      "texto": "USD por año. Cifra de ejemplo.",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "cuenta",
+      "kicker": "Paso 2 · La base del impuesto",
+      "prefijo": "",
+      "titulo": "",
+      "valor": "6.600",
+      "unidad": "",
+      "etiqueta": "USD de alquiler al año",
+      "operacion": "× 50% (renta presunta)",
+      "resultado": "3.300",
+      "texto": "Se toma la **menor**: 50% o alquiler menos gastos reales.",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "destacado",
+      "kicker": "Paso 3 · El impuesto",
+      "prefijo": "",
+      "titulo": "",
+      "valor": "4",
+      "unidad": "%",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "texto": "3.300 × 8% = USD 264 al año. Es **~4% del alquiler**, como máximo.",
+      "items": [],
+      "barras": []
+    },
+    {
+      "tipo": "lista",
+      "kicker": "Paso 4 · Lo que te queda",
+      "prefijo": "",
+      "titulo": "",
+      "valor": "",
+      "unidad": "",
+      "texto": "",
+      "items": [
+        {
+          "etiqueta": "Alquiler anual",
+          "valor": "USD 6.600"
+        },
+        {
+          "etiqueta": "IRP (8% sobre el 50%)",
+          "valor": "− USD 264"
+        }
+      ],
+      "etiqueta": "Después del IRP",
+      "operacion": "",
+      "resultado": "6.336",
+      "barras": []
+    },
+    {
+      "tipo": "cierre",
+      "kicker": "Sobre un depto de USD 75.000",
+      "prefijo": "",
+      "valor": "",
+      "unidad": "",
+      "etiqueta": "",
+      "operacion": "",
+      "resultado": "",
+      "items": [],
+      "barras": [
+        {
+          "etiqueta": "Rentabilidad bruta",
+          "valor_texto": "~8,8%",
+          "valor_num": 8.8
+        },
+        {
+          "etiqueta": "Después del IRP",
+          "valor_texto": "~8,4%",
+          "valor_num": 8.4
+        }
+      ],
+      "titulo": "Poco, pero hay que contarlo.",
+      "texto": ""
+    }
+  ]
+}
